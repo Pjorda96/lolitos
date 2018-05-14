@@ -77,6 +77,24 @@ INSERT INTO `tarjetas` (`id_tarjeta`, `destino`, `fecha`, `precio`, `salida`, `p
 	(4, 'uj', '2018-05-14', 4, 'kl', 1, '00:00:00', 'yy');
 /*!40000 ALTER TABLE `tarjetas` ENABLE KEYS */;
 
+-- Volcando estructura para tabla bbdd_ip.tarjetas_prediseñadas
+CREATE TABLE IF NOT EXISTS `tarjetas_prediseñadas` (
+  `id_tarjeta` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `destino` varchar(50) NOT NULL,
+  `fecha` date NOT NULL,
+  `precio` int(3) NOT NULL,
+  `salida` varchar(50) NOT NULL,
+  `plazas` int(1) NOT NULL,
+  `hora` time NOT NULL,
+  `vehiculo` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_tarjeta`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+-- Volcando datos para la tabla bbdd_ip.tarjetas_prediseñadas: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `tarjetas_prediseñadas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tarjetas_prediseñadas` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
