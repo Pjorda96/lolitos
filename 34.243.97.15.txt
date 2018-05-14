@@ -1,0 +1,4 @@
+Ip de la maquina del proyecto
+34.243.97.15
+
+ssh -i "lolitos.pem" ubuntu@ec2-34-243-97-15.eu-west-1.compute.amazonaws.com
