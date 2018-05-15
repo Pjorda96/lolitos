@@ -80,5 +80,246 @@ class Usuario extends Db
         $registro = parent::consultar($borrar);
     }*/
 
-    
+
+
+    /**
+     * Get the value of Usuario
+     *
+     * @return mixed
+     */
+    public function getUsuario()
+    {
+        return $this->usuario;
+    }
+
+    /**
+     * Set the value of Usuario
+     *
+     * @param mixed usuario
+     *
+     * @return self
+     */
+    public function setUsuario($usuario)
+    {
+        $this->usuario = $usuario;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Password
+     *
+     * @return mixed
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * Set the value of Password
+     *
+     * @param mixed password
+     *
+     * @return self
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Nombre
+     *
+     * @return mixed
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set the value of Nombre
+     *
+     * @param mixed nombre
+     *
+     * @return self
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Apellidos
+     *
+     * @return mixed
+     */
+    public function getApellidos()
+    {
+        return $this->apellidos;
+    }
+
+    /**
+     * Set the value of Apellidos
+     *
+     * @param mixed apellidos
+     *
+     * @return self
+     */
+    public function setApellidos($apellidos)
+    {
+        $this->apellidos = $apellidos;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Telefono
+     *
+     * @return mixed
+     */
+    public function getTelefono()
+    {
+        return $this->telefono;
+    }
+
+    /**
+     * Set the value of Telefono
+     *
+     * @param mixed telefono
+     *
+     * @return self
+     */
+    public function setTelefono($telefono)
+    {
+        $this->telefono = $telefono;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Vehiculo
+     *
+     * @return mixed
+     */
+    public function getVehiculo()
+    {
+        return $this->vehiculo;
+    }
+
+    /**
+     * Set the value of Vehiculo
+     *
+     * @param mixed vehiculo
+     *
+     * @return self
+     */
+    public function setVehiculo($vehiculo)
+    {
+        $this->vehiculo = $vehiculo;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Localidad
+     *
+     * @return mixed
+     */
+    public function getLocalidad()
+    {
+        return $this->localidad;
+    }
+
+    /**
+     * Set the value of Localidad
+     *
+     * @param mixed localidad
+     *
+     * @return self
+     */
+    public function setLocalidad($localidad)
+    {
+        $this->localidad = $localidad;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Florida
+     *
+     * @return mixed
+     */
+    public function getFlorida()
+    {
+        return $this->florida;
+    }
+
+    /**
+     * Set the value of Florida
+     *
+     * @param mixed florida
+     *
+     * @return self
+     */
+    public function setFlorida($florida)
+    {
+        $this->florida = $florida;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Genero
+     *
+     * @return mixed
+     */
+    public function getGenero()
+    {
+        return $this->genero;
+    }
+
+    /**
+     * Set the value of Genero
+     *
+     * @param mixed genero
+     *
+     * @return self
+     */
+    public function setGenero($genero)
+    {
+        $this->genero = $genero;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of Dni
+     *
+     * @return mixed
+     */
+    public function getDni()
+    {
+        return $this->dni;
+    }
+
+    /**
+     * Set the value of Dni
+     *
+     * @param mixed dni
+     *
+     * @return self
+     */
+    public function setDni($dni)
+    {
+        $this->dni = $dni;
+
+        return $this;
+    }
+
 }
