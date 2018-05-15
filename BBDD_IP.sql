@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `dni` varchar(9) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `nombre` varchar(50) NOT NULL,
+  `apellidos` varchar(50) DEFAULT NULL,
   `contraseña` varchar(12) NOT NULL,
   `cuenta_florida` varchar(50) NOT NULL,
   `imagen` longblob,
@@ -28,6 +29,7 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `intereses` varchar(50) DEFAULT NULL,
   `telefono` int(9) NOT NULL,
   `direccion` varchar(50) NOT NULL,
+  `fecha_nac` date NOT NULL,
   `genero` varchar(50) NOT NULL,
   PRIMARY KEY (`dni`),
   KEY `usuario` (`usuario`)
@@ -35,9 +37,9 @@ CREATE TABLE IF NOT EXISTS `persona` (
 
 -- Volcando datos para la tabla bbdd_ip.persona: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` (`dni`, `usuario`, `nombre`, `contraseña`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `genero`) VALUES
-	('6454656d', 'makaka', 'pepe', '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', 'rhtrh'),
-	('645465d', 'makaka', 'Marcos', '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', 'rhtrh');
+INSERT INTO `persona` (`dni`, `usuario`, `nombre`, `apellidos`, `contraseña`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`) VALUES
+	('6454656d', 'makaka', 'pepe', NULL, '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh'),
+	('645465d', 'makaka', 'Marcos', NULL, '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 
 -- Volcando estructura para tabla bbdd_ip.perxtar
@@ -70,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `tarjetas` (
   PRIMARY KEY (`id_tarjeta`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla bbdd_ip.tarjetas: ~2 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_ip.tarjetas: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `tarjetas` DISABLE KEYS */;
 INSERT INTO `tarjetas` (`id_tarjeta`, `destino`, `fecha`, `precio`, `salida`, `plazas`, `hora`, `vehiculo`) VALUES
 	(3, 'dfd', '2018-05-14', 5, 'dfd', 9, '00:00:00', 'df'),
@@ -89,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `tarjetas_prediseñadas` (
   `hora` time NOT NULL,
   `vehiculo` varchar(50) NOT NULL,
   PRIMARY KEY (`id_tarjeta`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla bbdd_ip.tarjetas_prediseñadas: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `tarjetas_prediseñadas` DISABLE KEYS */;
