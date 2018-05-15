@@ -32,11 +32,11 @@ class Login extends Db
         if ($pass === $contrasenyaDb) {
             if ($usuario==="admin") {
                 $_SESSION['usuario'] = "admin";
-                header('Location: listadoUsuarios.php');
+                header('Location: .php');
             }else {
                 $_SESSION['usuario'] = $usuario;
                 var_dump($_SESSION['usuario']);
-                header('Location: ahorcado.php/?usuario=' . $usuario);
+                header('Location: .php');
             }
         }else {
             header('Location: index.php');
