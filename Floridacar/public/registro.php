@@ -12,39 +12,41 @@
      <form class="" action="index.html" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
-        <input type="text" id="name" />
+        <input type="text" placeholder="usuario" id="name" />
       </div><br>
       <div>
         <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" />
+        <input type="password" placeholder="contraseña" id="contraseña" />
       </div><br>
       <div>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" />
+        <input type="text" placeholder="nombre" id="nombre" />
       </div><br>
       <div>
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" />
+        <input type="text" placeholder="apellidos" id="apellidos" />
     </div><br>
       <div>
         <label for="telefono">Teléfono:</label>
-        <input type="number" id="telefono" />
+        <input type="tel" placeholder="telefono" id="telefono" />
       </div><br>
       <div>
         <label for="plazas">Plazas:</label>
-        <input type="number" id="plazas" />
+        <input type="number" placeholder="Plazas" id="plazas" />
       </div><br>
       <div>
         <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" />
+        <input type="text" placeholder="Ciudad" id="ciudad" />
       </div><br>
       <div>
-        <label for="cuenta_florida">Cuenta Florida:</label>
-        <input type="text" id="cuenta_florida" />
+        <label for="correoflordia">Correo Florida:</label>
+        <input type="email" placeholder="Correo florida" id="correoflorda" />
       </div><br>
       <div>
-        <label for="genero">Género:</label>
-        <input type="text" id="genero" />
+        <select name="genero" id="genero">
+          <option>masculino</option>
+          <option>femenino</option>
+        </select>
       </div><br>
       <div>
         <label for="dni">DNI:</label>
