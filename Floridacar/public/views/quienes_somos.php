@@ -7,11 +7,11 @@
     .quienes{
       width: 100%;
       height: 10%;
-      position: relative;
+      position: absolute;
       vertical-align:bottom;
     }
     .contenedor{
-      position: absolute;
+      position: relative;
       vertical-align: middle;
       width: 100%;
       height: 60%;
