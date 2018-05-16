@@ -9,7 +9,7 @@
      <form class="" action="" onsubmit="validarInsertar()" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
-        <input type="text" placeholder="usuario" id="name" readonly/>
+        <input type="text" placeholder="usuario" id="user" readonly/>
       </div><br>
       <div>
         <label for="contraseña">Contraseña:</label>

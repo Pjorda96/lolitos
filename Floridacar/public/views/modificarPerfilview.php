@@ -5,8 +5,8 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
-      <input type="text" placeholder="user" id="usuario" name="usuario" value="<?php echo $filaUser['usuario']?>"><br>
+    <form class="" action="index.html" method="post" onsubmit="">
+      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?php echo $filaUser['usuario']?>"><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?php echo $filaUser['nombre']?>"><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?php echo $filaUser['apellidos']?>"><br>
       <input type="date" placeholder="fecha nacimiento" id="fechanac" name="fechanac" value="<?php echo $filaUser['fechanac']?>"><br>
@@ -20,7 +20,6 @@
       </select>
       <input type="submit" name="Enviar" value="Enviar">
       <input type="hidden" name="id" value="">
-      <input type="hidden" name="accion" value="actualizar">
     </form>
   </body>
 </html>
