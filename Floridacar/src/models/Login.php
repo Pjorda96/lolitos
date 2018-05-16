@@ -6,7 +6,7 @@
  * Time: 8:51
  */
 
-namespace Daw\models;
+namespace Car\models;
 
 session_start();
 

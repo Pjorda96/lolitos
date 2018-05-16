@@ -6,9 +6,9 @@
  * Time: 12:13
  */
 
-namespace Daw\models;
+namespace Car\models;
 
-use Daw\config\Config;
+use Car\config\Config;
 use mysqli;
 
 
