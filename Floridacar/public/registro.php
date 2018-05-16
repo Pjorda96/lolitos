@@ -1,7 +1,3 @@
-<?php
-require_once  __DIR__.'/../../vendor/autoload.php';
-use Car\models\Usuario;
- ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,7 +12,7 @@ use Car\models\Usuario;
      <form class="" action="index.html" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
-        <input type="text" placeholder="usuario" id="user" />
+        <input type="text" placeholder="usuario" id="name" />
       </div><br>
       <div>
         <label for="contraseña">Contraseña:</label>
