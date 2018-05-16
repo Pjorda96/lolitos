@@ -46,8 +46,14 @@ class Usuario extends Db
         $resOne = $this->execute($query);
         return $resOne->fetch_assoc();
     }
+    public function listatarjetas(){
+        $tarjetas="SELECT destino,fecha,precio,salida,plazas,hora FROM tarjetas";
+        $resultado = parent::consultar($tarjetas);
+
+              return $resultado;
 
 
+}
     /*public function lista(){
         $usuarios="select usuario from usuarios";
         $resultado = parent::consultar($usuarios);
