@@ -9,14 +9,11 @@ use Car\models\Usuario;
     <title>REGISTRO</title>
   </head>
   <body>
-    <?php
-
-     ?>
      <h1><center>REGISTRO</center></h1>
-     <form class="" action="index.html" method="post"><center>
+     <form class="" action="" onsubmit="validarInsertar()" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
-        <input type="text" placeholder="usuario" id="user" />
+        <input type="text" placeholder="usuario" id="user" readonly/>
       </div><br>
       <div>
         <label for="contraseña">Contraseña:</label>
@@ -40,19 +37,24 @@ use Car\models\Usuario;
       </div><br>
       <div>
         <label for="correoflordia">Correo Florida:</label>
-        <input type="email" placeholder="Correo florida" id="correoflorda" />
+        <input type="text" placeholder="Correo florida" id="correoflorda" /><label for="correoflordia">@floridauniversitaria.es</label>
       </div><br>
       <div>
+        <label for="genero">Género:</label>
         <select name="genero" id="genero">
-          <option>masculino</option>
-          <option>femenino</option>
+          <option>--Seleccione--</option>
+          <option value="H">Masculino</option>
+          <option value="M">Femenino</option>
         </select>
       </div><br>
       <div>
         <label for="dni">DNI:</label>
         <input type="text" id="dni" />
       </div>
-
+      <div>
+        <input type="submit" name="crear" value="Crear cuenta">
+      </div>
+      </div><br>
     </center></form>
   </body>
 </html>
