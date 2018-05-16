@@ -33,17 +33,25 @@ class Usuario extends Db
         parent::conectar();
     }
 
+    public function insertarUsuario($usuario,$nombre,$apellidos,$edad,$curso,$contrasenya){
+        $pass=hash("haval160,4", $contrasenya);
+        $insertar="insert into usuarios (nombre,apellidos,edad,curso,usuario,contrasenya) values
+    ('".$nombre."','".$apellidos."','".$edad."','".$curso."','".$usuario."','".$pass."')";
+        //echo $insertar;
+        $registro = parent::consultar($insertar);
+    }
+
     public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
-        $query="update persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
+        $actualizar="update persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
             $_POST['apellidos']."',fechanac='".$_POST['fechanac']."',foto='".$_POST['foto']."',telefono='".$_POST['telefono']."',direccion='".$_POST['direccion']."'
         where usuario='".$_POST['usuario']."';";
-        $resActualizar = $this->execute($query);
+        $resActualizar = parent::consultar($actualizar);
      return $resActualizar;
     }
     public function getOne($usuario)
     {
         $query = "SELECT * FROM persona WHERE usuario=$usuario";
-        $resOne = $this->execute($query);
+        $resOne = parent::consultar($query);
         return $resOne->fetch_assoc();
     }
     public function listatarjetas(){
@@ -79,15 +87,6 @@ class Usuario extends Db
             $this->curso=$fila['curso'];
         }
     }
-
-    public function insertarUsuario($nombre,$apellidos,$edad,$curso,$usuario,$contrasenya){
-        $pass=hash("haval160,4", $contrasenya);
-        $insertar="insert into usuarios (nombre,apellidos,edad,curso,usuario,contrasenya) values
-    ('".$nombre."','".$apellidos."','".$edad."','".$curso."','".$usuario."','".$pass."')";
-        //echo $insertar;
-        $registro = parent::consultar($insertar);
-    }
-
 
 
     public function borrarUsuario($borrado){

@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+require_once  __DIR__.'/../../vendor/autoload.php';
+use Car\models\Usuario;
+ ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -6,6 +9,7 @@
     <link rel="stylesheet" href="css/tarjeta.css">
   </head>
   <body>
+
     <div class="tarjeta">
       <table style="width:100%">
         <tr>
