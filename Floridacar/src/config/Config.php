@@ -1,5 +1,5 @@
 <?php
-namespace Daw\config;
+namespace Car\config;
 /**
  *
  */
