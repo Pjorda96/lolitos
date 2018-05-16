@@ -12,7 +12,7 @@
      <form class="" action="index.html" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
-        <input type="text" placeholder="usuario" id="name" />
+        <input type="text" placeholder="usuario" id="user" />
       </div><br>
       <div>
         <label for="contraseña">Contraseña:</label>

@@ -1,10 +1,9 @@
-function validar() {
+function validaractualizar() {
   var valor=document.getElementById('nombre').value;
   var valor2=document.getElementById('apellidos').value;
-  var valor3=document.getElementById('telefono').value;
-  var valor4=document.getElementById('plazas').value;
-  var valor5=document.getElementById('ciudad').value;
-  var valor5=document.getElementById('correoflorida').value;
+  var valor3=document.getElementById('fechanac').value;
+  var valor4=document.getElementById('telefono').value;
+  var valor5=document.getElementById('direccion').value;
   if (valor == "") {
     alert("El campo nombre esta vacio");
     return false;
@@ -19,9 +18,6 @@ function validar() {
     return false;
   } else if (valor5 == "") {
     alert("El campo ciudad esta vacio");
-    return false;
-  } else if (valor5 == "") {
-    alert("El campo correo esta vacio");
     return false;
   }
     else {
