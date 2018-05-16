@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Versión del servidor:         10.1.21-MariaDB - mariadb.org binary distribution
+-- Versión del servidor:         10.1.26-MariaDB - mariadb.org binary distribution
 -- SO del servidor:              Win32
--- HeidiSQL Versión:             9.4.0.5125
+-- HeidiSQL Versión:             9.5.0.5196
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -20,9 +20,9 @@ USE `bbdd_ip`;
 CREATE TABLE IF NOT EXISTS `persona` (
   `dni` varchar(9) NOT NULL,
   `usuario` varchar(50) NOT NULL,
+  `contraseña` varchar(12) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellidos` varchar(50) DEFAULT NULL,
-  `contraseña` varchar(12) NOT NULL,
   `cuenta_florida` varchar(50) NOT NULL,
   `imagen` longblob,
   `vehiculo` varchar(50) DEFAULT NULL,
@@ -31,15 +31,16 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `direccion` varchar(50) NOT NULL,
   `fecha_nac` date NOT NULL,
   `genero` varchar(50) NOT NULL,
+  `ciudad` varchar(50) NOT NULL,
   PRIMARY KEY (`dni`),
   KEY `usuario` (`usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla bbdd_ip.persona: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` (`dni`, `usuario`, `nombre`, `apellidos`, `contraseña`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`) VALUES
-	('6454656d', 'makaka', 'pepe', NULL, '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh'),
-	('645465d', 'makaka', 'Marcos', NULL, '1234', 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh');
+INSERT INTO `persona` (`dni`, `usuario`, `contraseña`, `nombre`, `apellidos`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`, `ciudad`) VALUES
+	('6454656d', 'makaka', '1234', 'pepe', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', ''),
+	('645465d', 'makaka', '1234', 'Marcos', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', '');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 
 -- Volcando estructura para tabla bbdd_ip.perxtar
@@ -72,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `tarjetas` (
   PRIMARY KEY (`id_tarjeta`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla bbdd_ip.tarjetas: ~1 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_ip.tarjetas: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `tarjetas` DISABLE KEYS */;
 INSERT INTO `tarjetas` (`id_tarjeta`, `destino`, `fecha`, `precio`, `salida`, `plazas`, `hora`, `vehiculo`) VALUES
 	(3, 'dfd', '2018-05-14', 5, 'dfd', 9, '00:00:00', 'df'),
