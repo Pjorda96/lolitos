@@ -1,5 +1,5 @@
 <?php
-namespace Daw\models;
+namespace Car\models;
 /**
  *
  */

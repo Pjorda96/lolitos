@@ -6,7 +6,7 @@
  * Time: 10:37
  */
 
-namespace Daw\models;
+namespace Car\models;
 
 /**
  *
@@ -32,6 +32,18 @@ class Usuario extends Db
         parent::__construct();
         parent::conectar();
     }
+
+    public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
+        $query="update persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
+            $_POST['apellidos']."',fechanac='".$_POST['fechanac']."',foto='".$_POST['foto']."',telefono='".$_POST['telefono']."',direccion='".$_POST['direccion']."'
+        where usuario='".$_POST['usuario']."';";
+        $resActualizar = $this->execute($query);
+     return $resActualizar;
+    }
+    public function getOne($usuario){
+     $query="SELECT * FROM persona WHERE usuario=$usuario";
+     $resOne= $this->execute($query);
+     return $resOne->fetch_assoc();
 
 
     /*public function lista(){
@@ -68,12 +80,7 @@ class Usuario extends Db
         $registro = parent::consultar($insertar);
     }
 
-    public function actualizarUsuario($usuario,$nombre,$apellidos,$edad,$curso){
-        $actualizar="update usuarios set nombre='".$nombre."',apellidos='".
-            $apellidos."',edad='".$edad."',curso='".$curso."'
-        where usuario='".$usuario."';";
-        $registro = parent::consultar($actualizar);
-    }
+
 
     public function borrarUsuario($borrado){
         $borrar="delete from usuarios where usuario='".$borrado."'";
