@@ -40,10 +40,12 @@ class Usuario extends Db
         $resActualizar = $this->execute($query);
      return $resActualizar;
     }
-    public function getOne($usuario){
-     $query="SELECT * FROM persona WHERE usuario=$usuario";
-     $resOne= $this->execute($query);
-     return $resOne->fetch_assoc();
+    public function getOne($usuario)
+    {
+        $query = "SELECT * FROM persona WHERE usuario=$usuario";
+        $resOne = $this->execute($query);
+        return $resOne->fetch_assoc();
+    }
 
 
     /*public function lista(){
