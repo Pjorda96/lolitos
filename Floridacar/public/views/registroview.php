@@ -31,10 +31,6 @@
         <input type="tel" placeholder="telefono" id="telefono" />
       </div><br>
       <div>
-        <label for="plazas">Plazas:</label>
-        <input type="number" placeholder="Plazas" id="plazas" />
-      </div><br>
-      <div>
         <label for="ciudad">Ciudad:</label>
         <input type="text" placeholder="Ciudad" id="ciudad" />
       </div><br>
