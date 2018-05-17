@@ -59,9 +59,15 @@ class Usuario extends Db
         $resultado = parent::consultar($tarjetas);
 
               return $resultado;
+            }
+    public function tarjetaCompleta(){
+        $tarjetasCompletas="SELECT destino,fecha,precio,salida,plazas,hora,tarjetas.vehiculo,nombre,apellidos
+FROM tarjetas inner join perxtar on tarjetas.id_tarjeta=perxtar.id_tarjeta
+inner join persona on persona.dni=perxtar.dni";
+        $resultado = parent::consultar($tarjetasCompletas);
 
-
-}
+              return $resultado;
+            }
     /*public function lista(){
         $usuarios="select usuario from usuarios";
         $resultado = parent::consultar($usuarios);
