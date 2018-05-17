@@ -47,20 +47,39 @@ class Usuario extends Db
         $resActualizar = parent::consultar($actualizar);
      return $resActualizar;
     }
+
+    public function leerDatos(){
+        $consulta="select nombre,apellidos,usuario,telefono,localidad,florida,genero,dni from persona where usuario='".$_POST['usuario']."'";
+        //echo $consulta;
+        $consultaUsuario = parent::consultar($consulta);
+        $this->usuario=$_POST['usuario'];
+
+        foreach ($consultaUsuario as $fila) {
+            $this->nombre=$fila['nombre'];
+            $this->apellidos=$fila['apellidos'];
+            $this->telefono=$fila['telefono'];
+            $this->localidad=$fila['localidad'];
+            $this->florida=$fila['florida'];
+            $this->genero=$fila['genero'];
+            $this->dni=$fila['dni'];
+        }
+    }
+
     public function getOne($usuario)
     {
         $query = "SELECT * FROM persona WHERE usuario=$usuario";
+        var_dump($query);
         $resOne = parent::consultar($query);
-        return $resOne->fetch_assoc();
+        var_dump($resOne);
+        return $resOne;
     }
+
     public function listatarjetas(){
         $tarjetas="SELECT destino,fecha,precio,salida,plazas,hora FROM tarjetas";
         $resultado = parent::consultar($tarjetas);
 
               return $resultado;
-
-
-}
+    }
     /*public function lista(){
         $usuarios="select usuario from usuarios";
         $resultado = parent::consultar($usuarios);
