@@ -64,6 +64,6 @@ if (isset($_POST["crear"])){
         <input type="submit" name="crear" value="Crear cuenta">
       </div>
     </center></form>
-  <script src="../js/validarinsertar.js"></script>
+  <script src="../js/validarInsertar.js"></script>
   </body>
 </html>

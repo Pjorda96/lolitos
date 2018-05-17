@@ -35,10 +35,9 @@ class Usuario extends Db
 
     public function insertarUsuario($nombre,$apellidos,$telefono,$ciudad,$correoflorida,$genero,$dni,$usuario,$password){
         $pass=hash("haval160,4", $password);
-        $insertar="insert into persona (dni,usuario,contraseña,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
+        $insertar="insert into persona (dni,usuario,contrasenya,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
     ('$dni','$usuario','$pass','$nombre','$apellidos','$correoflorida',$telefono,'$genero','$ciudad')";
-        var_dump($insertar);
-        //$registro = parent::consultar($insertar);
+        $registro = parent::consultar($insertar);
     }
 
     public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
