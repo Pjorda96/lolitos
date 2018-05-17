@@ -20,7 +20,7 @@ USE `bbdd_ip`;
 CREATE TABLE IF NOT EXISTS `persona` (
   `dni` varchar(9) NOT NULL,
   `usuario` varchar(50) NOT NULL,
-  `contraseña` varchar(50) DEFAULT NULL,
+  `contrasenya` varchar(50) DEFAULT NULL,
   `nombre` varchar(50) DEFAULT NULL,
   `apellidos` varchar(50) DEFAULT NULL,
   `cuenta_florida` varchar(50) DEFAULT NULL,
@@ -36,11 +36,14 @@ CREATE TABLE IF NOT EXISTS `persona` (
   KEY `usuario` (`usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla bbdd_ip.persona: ~2 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_ip.persona: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO `persona` (`dni`, `usuario`, `contraseña`, `nombre`, `apellidos`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`, `ciudad`) VALUES
+INSERT INTO `persona` (`dni`, `usuario`, `contrasenya`, `nombre`, `apellidos`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`, `ciudad`) VALUES
+	('325235', 'sdffsdf', 'ecd1a3599b7c70c0befdc366397b6fe8a61271ba', 'dr', 'drt', 'sdffsdf', NULL, NULL, NULL, 4536534, NULL, NULL, 'M', 'xdfsd'),
+	('3434343', 'marcos_perra', 'ecd1a3599b7c70c0befdc366397b6fe8a61271ba', 'Macos', 'Perra Peluda', 'marcos_perra', NULL, NULL, NULL, 69696969, NULL, NULL, 'M', 'Chueca'),
 	('6454656d', 'makaka', '1234', 'pepe', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', ''),
-	('645465d', 'makaka', '1234', 'Marcos', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', '');
+	('645465d', 'makaka', '1234', 'Marcos', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', ''),
+	('zzyrk', 'arykzy', '6509dce0870f3a10fd6802f7f2c11b4c4f25904f', 'Julio', 'aryk', 'arykzy', NULL, NULL, NULL, 684526521, NULL, NULL, 'H', 'aryk');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 
 -- Volcando estructura para tabla bbdd_ip.perxtar

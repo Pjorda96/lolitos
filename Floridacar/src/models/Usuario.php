@@ -35,10 +35,9 @@ class Usuario extends Db
 
     public function insertarUsuario($nombre,$apellidos,$telefono,$ciudad,$correoflorida,$genero,$dni,$usuario,$password){
         $pass=hash("haval160,4", $password);
-        $insertar="insert into persona (dni,usuario,contraseña,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
+        $insertar="insert into persona (dni,usuario,contrasenya,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
     ('$dni','$usuario','$pass','$nombre','$apellidos','$correoflorida',$telefono,'$genero','$ciudad')";
-        var_dump($insertar);
-        //$registro = parent::consultar($insertar);
+        $registro = parent::consultar($insertar);
     }
 
     public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
@@ -59,9 +58,15 @@ class Usuario extends Db
         $resultado = parent::consultar($tarjetas);
 
               return $resultado;
+            }
+    public function tarjetaCompleta(){
+        $tarjetasCompletas="SELECT destino,fecha,precio,salida,plazas,hora,tarjetas.vehiculo,nombre,apellidos,
+FROM tarjetas inner join perxtar on tarjetas.id_tarjeta=perxtar.id_tarjeta
+inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
+        $resultado = parent::consultar($tarjetasCompletas);
 
-
-}
+              return $resultado;
+            }
     /*public function lista(){
         $usuarios="select usuario from usuarios";
         $resultado = parent::consultar($usuarios);

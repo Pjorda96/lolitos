@@ -13,25 +13,25 @@ use Car\models\Usuario;
     <div class="tarjeta">
       <table style="width:100%" border="1px ">
         <tr>
-          <td>Salida</td>
-          <td align="right">Destino</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['salida'];} ?></td>
+          <td align="right"><?php foreach ($pantallaTarjeta as $fila) {echo $fila['destino'];} ?></td>
         </tr>
         <tr>
-          <td>Dia</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['fecha'];} ?></td>
           <td colspan="4" align="right">Foto</td>
         </tr>
         <tr>
-          <td>Hora</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['hora'];} ?></td>
         </tr>
         <tr>
-          <td>Precio</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['precio'];} ?></td>
         </tr>
         <tr>
-          <td>Plazas</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
         </tr>
         <tr>
-          <td>Vehiculo</td>
-          <td align="right">Nombre Apellidos</td>
+          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
+          <td align="right"><?php foreach ($pantallaTarjeta as $fila) {echo $fila['nombre'].$fila['apellidos'];} ?></td>
         </tr>
       </table>
       <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">

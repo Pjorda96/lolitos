@@ -43,6 +43,7 @@ class Db
 
     public function consultar($consulta){
         $resultado=$this->conector->query($consulta);
+        //var_dump($this->conector->error);
         return $resultado;
     }
 
