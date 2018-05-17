@@ -3,11 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>REGISTRO</title>
+    <style media="screen" type="text/css">
+    .texto{
+      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+
+      color: #ffffff;
+
+      font-size: 18px;
+
+      font-weight: 400;
+
+      text-align: center;
+
+      background: #889ccf;
+
+      margin: 0 0 25px;
+
+      overflow: hidden;
+
+      padding: 70px;
+
+      border-radius: 35px 0px 35px 0px;
+
+      -moz-border-radius: 35px 0px 35px 0px;
+
+      -webkit-border-radius: 35px 0px 35px 0px;
+
+      border: 2px solid #5878ca;
+    }
+      </style>
   </head>
   <body>
     <?php
 
      ?>
+     <div class="texto">
+
      <h1><center>REGISTRO</center></h1>
      <form class="" action="index.html" method="post"><center>
        <div>
@@ -48,7 +79,9 @@
         <label for="dni">DNI:</label>
         <input type="text" id="dni" />
       </div>
-
+      <br>
+<input type="submit">
     </center></form>
+  </div>
   </body>
 </html>
