@@ -11,7 +11,7 @@ use Car\models\Usuario;
   <body>
 
     <div class="tarjeta">
-      <table style="width:100%">
+      <table style="width:100%" border="1px ">
         <tr>
           <td>Salida</td>
           <td align="right">Destino</td>
@@ -34,6 +34,6 @@ use Car\models\Usuario;
           <td align="right">Nombre Apellidos</td>
         </tr>
       </table>
-
+      <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">
   </body>
 </html>
