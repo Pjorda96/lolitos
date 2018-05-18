@@ -17,4 +17,3 @@ class Session
     //header('Location: index.php');
   }
 }
-?>
