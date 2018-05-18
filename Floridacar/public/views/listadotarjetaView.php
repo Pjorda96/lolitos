@@ -70,27 +70,36 @@
         a
       </div>
       <div class="second"style="background-color: green;">
-
         <div class="tarjeta">
-          <table style="width:200px" border="1px ">
-            <tr>
-              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['salida'];} ?></td>
-              <td align="right"><?php foreach ($filasTarjetas as $fila) {echo $fila['destino'];} ?></td>
-            </tr>
-            <tr>
-              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['fecha'];} ?></td>
-              <td colspan="4" align="right">Foto</td>
-            </tr>
-            <tr>
-              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['hora'];} ?></td>
-            </tr>
-            <tr>
-              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['precio'];} ?></td>
-            </tr>
-            <tr>
-              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['plazas'];} ?></td>
-            </tr>
-          </table>
+          <?php foreach ($filasTarjetas as $fila)
+        echo "<table style='width:200px' border='1px'>";
+        echo "<tr>";
+        echo "<td>";
+        {echo $fila['salida'];}
+        echo "</td>";
+        echo "<td align='right'>";
+        {echo $fila['destino'];}
+        echo "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>";
+        {echo $fila['fecha'];}
+        echo"</td>";
+        echo "<td colspan='4' align='right'>";
+        {echo $fila['hora'];}
+        echo "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>";
+        {echo $fila['plazas'];}
+        echo"</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "<td>";
+        {echo $fila['precio'];}
+        echo"</td>";
+        echo  "</table>"
+          ?>
       </div>
     </div>
     <div class="third"style="background-color: yellow;">
@@ -99,3 +108,4 @@
   </div>
   </body>
 </html>
+<td><?php foreach ($filasTarjetas as $fila) {echo $fila['salida'];} ?></td>
