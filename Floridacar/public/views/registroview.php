@@ -44,8 +44,8 @@ if (isset($_POST["crear"])){
         <label for="genero">Género:</label><br>
         <select name="genero" name="genero" id="genero">
           <option>--Seleccione--</option>
-          <option value="H">Masculino</option>
-          <option value="M">Femenino</option>
+          <option value="Hombre">Masculino</option>
+          <option value="Mujer">Femenino</option>
         </select>
       </div><br>
       <div>

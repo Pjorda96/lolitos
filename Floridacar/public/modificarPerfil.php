@@ -8,3 +8,5 @@ $perfil= new Usuario();
 
 $filaUser = $perfil->getOne($_GET['usuario']);
 include_once("views/modificarPerfilview.php");
+
+$filaUser->fetch_assoc();
