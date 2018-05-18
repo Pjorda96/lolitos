@@ -18,7 +18,7 @@ use Car\models\Usuario;
 text-align:center;
   position:absolute;
   width:310px;
-  height:310px;
+  height:290px;
   top:50%;
   left:45%;
   margin-top:-100px;
