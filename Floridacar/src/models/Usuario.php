@@ -91,7 +91,7 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
 
 
     public function borrarUsuario($borrado){
-        $borrar="delete from usuarios where usuario='$borrado'";
+        $borrar="delete from persona where usuario='$borrado'";
         $registro = parent::consultar($borrar);
     }
 
