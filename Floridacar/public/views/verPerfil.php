@@ -12,7 +12,7 @@ use Car\models\Usuario;
 
 $baseDatos=new Usuario();
 $baseDatos->getOne('pajoga');
-$baseDatos->leerDatos();
+$baseDatos->leerDatos('pajoga');
 
  ?>
 <!DOCTYPE html>
@@ -29,13 +29,10 @@ $baseDatos->leerDatos();
       <label for="foto">Imagen:</label><br>
       <input type="file" size="30" id="foto" name="foto" value="" readonly><br>
       <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>" readonly><br>
-      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$baseDatos->get()?>" readonly><br>
-      <select name="genero" id="genero">
-        <option>hombre</option>
-        <option>mujer</option>
-      </select>
-      <input type="submit" name="Enviar" value="Enviar">
+      <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad" value="<?=$baseDatos->getLocalidad()?>" readonly><br>
+      <input type="text" placeholder="Genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly>
       <input type="hidden" name="id" value="">
     </form>
+  <button onclick="">Volver</button>
   </body>
 </html>

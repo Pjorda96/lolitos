@@ -48,18 +48,17 @@ class Usuario extends Db
      return $resActualizar;
     }
 
-    public function leerDatos(){
-        $consulta="select nombre,apellidos,usuario,telefono,localidad,florida,genero,dni from persona where usuario='".$_POST['usuario']."'";
-        //echo $consulta;
+    public function leerDatos($usuario){
+        $consulta="select nombre,apellidos,usuario,telefono,ciudad,cuenta_florida,genero,dni from persona where usuario='$usuario'";
+        //var_dump($consulta);
         $consultaUsuario = parent::consultar($consulta);
-        $this->usuario=$_POST['usuario'];
 
         foreach ($consultaUsuario as $fila) {
             $this->nombre=$fila['nombre'];
             $this->apellidos=$fila['apellidos'];
             $this->telefono=$fila['telefono'];
-            $this->localidad=$fila['localidad'];
-            $this->florida=$fila['florida'];
+            $this->localidad=$fila['ciudad'];
+            $this->florida=$fila['cuenta_florida'];
             $this->genero=$fila['genero'];
             $this->dni=$fila['dni'];
         }
@@ -67,10 +66,10 @@ class Usuario extends Db
 
     public function getOne($usuario)
     {
-        $query = "SELECT * FROM persona WHERE usuario=$usuario";
-        var_dump($query);
+        $query = "SELECT * FROM persona WHERE usuario='$usuario'";
+        //var_dump($query);
         $resOne = parent::consultar($query);
-        var_dump($resOne);
+        //var_dump($resOne);
         return $resOne;
     }
 
@@ -90,6 +89,12 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
               return $resultado;
     }
 
+
+    public function borrarUsuario($borrado){
+        $borrar="delete from usuarios where usuario='$borrado'";
+        $registro = parent::consultar($borrar);
+    }
+
     /*public function lista(){
         $usuarios="select usuario from usuarios";
         $resultado = parent::consultar($usuarios);
@@ -100,26 +105,6 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
             echo $fila['usuario'];
             echo "</option>";
         }
-    }
-
-    public function leerDatos(){
-        $consulta="select nombre,apellidos,usuario,edad,curso from usuarios where usuario='".$_POST['usuario']."'";
-        //echo $consulta;
-        $consultaUsuario = parent::consultar($consulta);
-        $this->usuario=$_POST['usuario'];
-
-        foreach ($consultaUsuario as $fila) {
-            $this->nombre=$fila['nombre'];
-            $this->apellidos=$fila['apellidos'];
-            $this->edad=$fila['edad'];
-            $this->curso=$fila['curso'];
-        }
-    }
-
-
-    public function borrarUsuario($borrado){
-        $borrar="delete from usuarios where usuario='".$borrado."'";
-        $registro = parent::consultar($borrar);
     }*/
 
 
@@ -363,5 +348,4 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
 
         return $this;
     }
-
 }
