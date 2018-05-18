@@ -1,27 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
-  </head>
-
-  <body>
-    <?php
-    foreach ($filasTarjetas as $fila) {
-        echo "<option value='";
-        echo $fila['destino'];
-        echo "'>";
-        echo $fila['fecha'];
-        echo "'>";
-        echo $fila['precio'];
-        echo "'>";
-        echo $fila['salida'];
-        echo "'>";
-        echo $fila['plazas'];
-        echo "'>";
-        echo $fila['hora'];
-        echo "</option>";
+    <style media="screen" type="text/css">
+    .contenedor{
+      position: absolute;
+      vertical-align: bottom;
+      width: 100%;
+      height: 70%;
+      text-align: center;
+      position: absolute;
     }
-     ?>
+    .first{
+      position: relative;
+      width: 20%;
+      padding: 25px 0;
+      float: left;
+      left:4%;
+      top: 5%;
+    }
+    .second{
+      position: relative;
+      width: 50%;
+      padding: 25px 0;
+      float: left;
+      left:5%;
+      top: 5%;
+      height: 80%;
+    }
+    .third{
+      position: relative;
+      width: 20%;
+      padding: 25px 0;
+      float:left;
+      left:6%;
+      top: 5%;
+    }
+    .header{
+      width: 100%;
+      height: 20%;
+      position: relative;
+      vertical-align: top;
+    }
+    .menu{
+      width: 100%;
+      height: 10%;
+      position: relative;
+      vertical-align: middle;
+
+    }
+    .total{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="total" style="background-color: grey;">
+    <div class="header" style="background-color: pink;">
+      a
+    </div>
+    <div class="menu" style="background-color: purple;">
+      a
+    </div>
+    <div class="contenedor" style="background-color: blue;">
+      <div class="first"style="background-color: red;">
+        a
+      </div>
+      <div class="second"style="background-color: green;">
+
+        <div class="tarjeta">
+          <table style="width:200px" border="1px ">
+            <tr>
+              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['salida'];} ?></td>
+              <td align="right"><?php foreach ($filasTarjetas as $fila) {echo $fila['destino'];} ?></td>
+            </tr>
+            <tr>
+              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['fecha'];} ?></td>
+              <td colspan="4" align="right">Foto</td>
+            </tr>
+            <tr>
+              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['hora'];} ?></td>
+            </tr>
+            <tr>
+              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['precio'];} ?></td>
+            </tr>
+            <tr>
+              <td><?php foreach ($filasTarjetas as $fila) {echo $fila['plazas'];} ?></td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <div class="third"style="background-color: yellow;">
+      a
+    </div>
+  </div>
   </body>
 </html>

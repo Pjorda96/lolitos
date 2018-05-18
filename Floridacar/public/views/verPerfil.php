@@ -9,10 +9,16 @@
 
 require_once  __DIR__.'/../../vendor/autoload.php';
 use Car\models\Usuario;
+use Car\models\Session;
 
 $baseDatos=new Usuario();
 $baseDatos->getOne('pajoga');
 $baseDatos->leerDatos('pajoga');
+
+$sesion = new Session();
+/*if ($_SESSION['user'] != $baseDatos->getUsuario()){
+    header('Location: index.php');
+}*/
 
  ?>
 <!DOCTYPE html>
