@@ -77,7 +77,7 @@
                     <div class="dropdown secondone">
                         <a class="dropdown-toggle usermendrop" data-toggle="dropdown" data-target="#">
 
-                            <img src="https://www.floridaoberta.com/pluginfile.php/139118/user/icon/adaptable/f1?rev=3436228" alt="Imagen de Usuario" title="Imagen de Usuario JORDA GARCIA" class="userpicture" width="80" height="80" />USUARIO                <span class="fa fa-angle-down"></span>
+                            <img src="https://www.floridaoberta.com/pluginfile.php/9688/user/icon/adaptable/f1?rev=14284" alt="Imagen de Usuario" title="Imagen de Usuario" class="userpicture" width="80" height="80" />USUARIO                <span class="fa fa-angle-down"></span>
                         </a>
 
                         <ul class="dropdown-menu usermen" role="menu">

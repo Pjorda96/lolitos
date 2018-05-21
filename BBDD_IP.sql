@@ -36,9 +36,10 @@ CREATE TABLE IF NOT EXISTS `persona` (
   KEY `usuario` (`usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla bbdd_ip.persona: ~5 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_ip.persona: ~6 rows (aproximadamente)
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
 INSERT INTO `persona` (`dni`, `usuario`, `contrasenya`, `nombre`, `apellidos`, `cuenta_florida`, `imagen`, `vehiculo`, `intereses`, `telefono`, `direccion`, `fecha_nac`, `genero`, `ciudad`) VALUES
+	('21792971B', 'pajoga', 'f5210b502970f3c8b247966b042d5a188ab52d02', 'Pablo', 'Jorda', 'pajoga', NULL, NULL, NULL, 684987684, NULL, NULL, 'H', 'Valencia'),
 	('325235', 'sdffsdf', 'ecd1a3599b7c70c0befdc366397b6fe8a61271ba', 'dr', 'drt', 'sdffsdf', NULL, NULL, NULL, 4536534, NULL, NULL, 'M', 'xdfsd'),
 	('3434343', 'marcos_perra', 'ecd1a3599b7c70c0befdc366397b6fe8a61271ba', 'Macos', 'Perra Peluda', 'marcos_perra', NULL, NULL, NULL, 69696969, NULL, NULL, 'M', 'Chueca'),
 	('6454656d', 'makaka', '1234', 'pepe', NULL, 'mekaka', _binary 0x730000, 'el', 'lu', 64564, 'rhrth', '0000-00-00', 'rhtrh', ''),
