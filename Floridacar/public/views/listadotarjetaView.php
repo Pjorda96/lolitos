@@ -71,7 +71,7 @@
       </div>
       <div class="second"style="background-color: green;">
         <?php foreach ($filasTarjetas as $fila){
-            echo "<button type='button' name='button'>";
+            echo "<button type='button' name='button' a href='tarjeta.php?id_tarjeta='.$fila[id_tarjeta].'''>";
             echo "<table style='width:200px' border='1px'>";
             echo "<tr>";
             echo "<td>";
@@ -110,3 +110,4 @@
 </div>
   </body>
 </html>
+<button type="button" a href="tarjeta.php?id_tarjeta=".$fila[id_tarjeta] name="button"></button>
