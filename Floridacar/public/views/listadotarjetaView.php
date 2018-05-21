@@ -70,35 +70,38 @@
         a
       </div>
       <div class="second"style="background-color: green;">
-          <?php foreach ($filasTarjetas as $fila)
-         echo "<table style='width:200px' border='1px'>";
-         echo "<tr>";
-         echo "<td>";
-         echo $fila['salida'];
-         echo "</td>";
-         echo "<td align='right'>";
-         echo $fila['destino'];
-         echo "</td>";
-         echo "</tr>";
-         echo "<tr>";
-         echo "<td>";
-         echo $fila['fecha'];
-         echo"</td>";
-         echo "<td colspan='4' align='right'>";
-         echo $fila['hora'];
-         echo "</td>";
-         echo "</tr>";
-         echo "<tr>";
-         echo "<td>";
-         echo $fila['plazas'];
-         echo"</td>";
-         echo "</tr>";
-         echo "<tr>";
-         echo "<td>";
-         echo $fila['precio'];
-         echo"</td>";
-         echo  "</table>";
-          ?>
+        <?php foreach ($filasTarjetas as $fila){
+            echo "<button type='button' name='button'>";
+            echo "<table style='width:200px' border='1px'>";
+            echo "<tr>";
+            echo "<td>";
+            echo $fila['salida'];
+            echo "</td>";
+            echo "<td align='right'>";
+            echo $fila['destino'];
+            echo "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>";
+            echo $fila['fecha'];
+            echo"</td>";
+            echo "<td colspan='4' align='right'>";
+            echo $fila['hora'];
+            echo "</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>";
+            echo $fila['plazas'];
+            echo"</td>";
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>";
+            echo $fila['precio'];
+            echo"</td>";
+            echo  "</table>";
+            echo "</button>";
+          }
+              ?>
     </div>
     <div class="third"style="background-color: yellow;">
       a
