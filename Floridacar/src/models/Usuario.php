@@ -74,7 +74,7 @@ class Usuario extends Db
     }
 
     public function listatarjetas(){
-        $tarjetas="SELECT destino,fecha,precio,salida,plazas,hora FROM tarjetas";
+        $tarjetas="SELECT id_tarjeta,destino,fecha,precio,salida,plazas,hora FROM tarjetas";
         $resultado = parent::consultar($tarjetas);
 
               return $resultado;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+  <link rel="stylesheet" href="https://www.floridaoberta.com/theme/adaptable/style/font-awesome.min.css">
     <style media="screen" type="text/css">
     .contenedor{
       position: absolute;
