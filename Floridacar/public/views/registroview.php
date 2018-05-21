@@ -53,10 +53,6 @@ if (isset($_POST["crear"])){
         <input type="text" name="dni" id="dni" />
       </div><br>
       <div>
-           <label for="user">Usuario:</label><br>
-           <input type="text" name="user" placeholder="usuario" id="user" readonly/>
-      </div><br>
-      <div>
           <label for="password">Contraseña:</label><br>
           <input type="password" name="password" placeholder="password" id="password" />
       </div><br>
