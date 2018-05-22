@@ -8,33 +8,7 @@ use Car\models\Usuario;
      <meta charset="utf-8">
      <title>Inicio de Sesión</title>
      <link rel="stylesheet" href="https://www.floridaoberta.com/theme/adaptable/style/font-awesome.min.css">
-     <style media="screen" type="text/css">
-     body{
-  background-image: url('../images/fondologin.png');
-	background-color: #444;
-
-}
-
-.cuadrado{
-text-align:center;
-  position:absolute;
-  width:310px;
-  height:290px;
-  top:50%;
-  left:45%;
-  margin-top:-100px;
-  margin-left:-100px;
-}
-#container{
-  height: 400px;
-
-}
-
-.color{
-color: black;
-font-size: 150%;
-}
-</style>
+     <link rel="stylesheet" href="../css/login.css">
    </head>
    <body>
 
@@ -56,7 +30,7 @@ font-size: 150%;
 
                      <input class="" type="submit" value="Login">
 
-                     <input type="button"class="button_active" onclick="location.href='../registro.php';"  name="Registrarse" value="Registrarse">
+                     <input type="button"class="button_active" onclick="location.href='registro.php';"  name="Registrarse" value="Registrarse">
 
                      </form>
                  </div>
