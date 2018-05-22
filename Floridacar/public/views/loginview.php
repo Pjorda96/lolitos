@@ -7,6 +7,7 @@ use Car\models\Usuario;
    <head>
      <meta charset="utf-8">
      <title>Inicio de Sesión</title>
+     <link rel="stylesheet" href="https://www.floridaoberta.com/theme/adaptable/style/font-awesome.min.css">
      <style media="screen" type="text/css">
      body{
   background-image: url('../images/fondologin.png');
