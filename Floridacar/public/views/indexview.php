@@ -33,9 +33,10 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
+                <li><a href="" class="text-white">Ver perfil</a></li>
+                <li><a href="#" class="text-white">Iniciar Sesion</a></li>
+                <li><a href="#" class="text-white">Registararse</a></li>
+                <li><a href="#" class="text-white">Cerrar sesion</a></li>
               </ul>
             </div>
           </div>
