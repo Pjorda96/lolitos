@@ -71,7 +71,8 @@
         <div class="container">
           <a href="tarjeta.php">ye</a>
           <?php foreach ($filasTarjetas as $fila){
-              echo "<button type='button' name='button' a href='tarjeta.php?id=".$fila['id_tarjeta']."'>";
+              echo "string";
+              echo "<button type='button' name='button'>";
               echo "<table style='width:200px' border='1px'>";
               echo "<tr>";
               echo "<td>";
