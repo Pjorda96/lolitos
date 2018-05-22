@@ -23,7 +23,7 @@ class Login extends Db
     {
         $pass = hash("haval160,4", $contrasenya);
 
-        $passw = "select contrasenya from usuarios where usuario='" . $usuario . "'";
+        $passw = "SELECT contrasenya from usuarios where usuario='" . $usuario . "'";
         $resultado = parent::consultar($passw);
         foreach ($resultado as $fila) {
             $contrasenyaDb = $fila['contrasenya'];

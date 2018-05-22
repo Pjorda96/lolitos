@@ -1,9 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pablo
- * Date: 21/05/2018
- * Time: 8:47
- */
-
-header('Location: views/paginaPrincipal.php');
+require_once __DIR__.'/../vendor/autoload.php';
+use Car\models\Usuario;
+$tarjeta= new Usuario();
+$filasTarjetas=$tarjeta->listatarjetas();
+include_once("views/indexview.php");
+ ?>

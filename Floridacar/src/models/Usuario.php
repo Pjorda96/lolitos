@@ -35,13 +35,13 @@ class Usuario extends Db
 
     public function insertarUsuario($nombre,$apellidos,$telefono,$ciudad,$correoflorida,$genero,$dni,$usuario,$password){
         $pass=hash("haval160,4", $password);
-        $insertar="insert into persona (dni,usuario,contrasenya,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
+        $insertar="INSERT into persona (dni,usuario,contrasenya,nombre,apellidos,cuenta_florida,telefono,genero,ciudad) values
     ('$dni','$usuario','$pass','$nombre','$apellidos','$correoflorida',$telefono,'$genero','$ciudad')";
         $registro = parent::consultar($insertar);
     }
 
     public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
-        $actualizar="update persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
+        $actualizar="UPDATE persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
             $_POST['apellidos']."',fechanac='".$_POST['fechanac']."',foto='".$_POST['foto']."',telefono='".$_POST['telefono']."',direccion='".$_POST['direccion']."'
         where usuario='".$_POST['usuario']."';";
         $resActualizar = parent::consultar($actualizar);
@@ -49,7 +49,7 @@ class Usuario extends Db
     }
 
     public function leerDatos($usuario){
-        $consulta="select nombre,apellidos,usuario,telefono,ciudad,cuenta_florida,genero,dni from persona where usuario='$usuario'";
+        $consulta="SELECT nombre,apellidos,usuario,telefono,ciudad,cuenta_florida,genero,dni from persona where usuario='$usuario'";
         //var_dump($consulta);
         $consultaUsuario = parent::consultar($consulta);
 
@@ -91,7 +91,7 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
 
 
     public function borrarUsuario($borrado){
-        $borrar="delete from persona where usuario='$borrado'";
+        $borrar="DELETE from persona where usuario='$borrado'";
         $registro = parent::consultar($borrar);
     }
 
