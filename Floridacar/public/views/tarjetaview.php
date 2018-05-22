@@ -40,7 +40,7 @@ $sesion = new Session();
         </tr>
         <tr>
           <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
-          <td align="right"><?php foreach ($pantallaTarjeta as $fila) {echo $fila['nombre'].$fila['apellidos'];} ?></td>
+          <td align="right"></td>
         </tr>
       </table>
       <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">

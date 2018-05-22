@@ -1,0 +1,25 @@
+body{
+    background-image: url('../images/fondologin.png');
+    background-color: #444;
+
+}
+
+.cuadrado{
+    text-align:center;
+    position:absolute;
+    width:310px;
+    height:290px;
+    top:50%;
+    left:45%;
+    margin-top:-100px;
+    margin-left:-100px;
+}
+#container{
+    height: 400px;
+
+}
+
+.color{
+    color: black;
+    font-size: 150%;
+}

@@ -8,59 +8,83 @@ use Car\models\Usuario;
      <meta charset="utf-8">
      <title>Inicio de Sesión</title>
      <link rel="stylesheet" href="https://www.floridaoberta.com/theme/adaptable/style/font-awesome.min.css">
-     <style media="screen" type="text/css">
-     body{
-  background-image: url('../images/fondologin.png');
-	background-color: #444;
+     <link rel="stylesheet" href="../css/login.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
 
-}
-
-.cuadrado{
-text-align:center;
-  position:absolute;
-  width:310px;
-  height:290px;
-  top:50%;
-  left:45%;
-  margin-top:-100px;
-  margin-left:-100px;
-}
-#container{
-  height: 400px;
-
-}
-
-.color{
-color: black;
-font-size: 150%;
-}
-</style>
-   </head>
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" type="text/css" href="../css/util.css">
+ <link rel="stylesheet" type="text/css" href="../css/main.css">
+<!--===============================================================================================-->
+</head>
    <body>
 
-      <form class="" action="index.html" method="post">
+                 <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-51">
+						Login
+					</span>
 
 
-                 <div class="cuadrado"  style="background-color: white;">
-                  <h3 class="color">Introduce tu cuenta</h3>
-                   <form accept-charset="UTF-8" role="form">
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+					</div>
 
-                      <input class="texto" placeholder="usuario" name="usuario" type="text">
-                      <br>
-                      <br>
 
-                       <input class="texto" placeholder="password" name="password" type="password" value="">
-                       <br>
-                       <br>
-                       <br>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
 
-                     <input class="" type="submit" value="Login">
+					<div class="flex-sb-m w-full p-t-3 p-b-24">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-                     <input type="button"class="button_active" onclick="location.href='../registro.php';"  name="Registrarse" value="Registrarse">
+						<div>
+							<a href="#" class="txt1">
+								Forgot?
+							</a>
+						</div>
+					</div>
 
-                     </form>
-                 </div>
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
 
      </form>
+
    </body>
  </html>

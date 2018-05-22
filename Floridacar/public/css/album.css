@@ -6,7 +6,7 @@
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #000000;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -37,3 +37,7 @@ footer p {
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.album py-5 bg-light{
+background-color: #F0F8FF;
+}
