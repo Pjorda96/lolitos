@@ -12,8 +12,8 @@ use Car\models\Usuario;
 use Car\models\Session;
 
 $baseDatos=new Usuario();
-$baseDatos->getOne('pajoga');
-$baseDatos->leerDatos('pajoga');
+$baseDatos->getOne('dafeca');
+$baseDatos->leerDatos('dafeca');
 
 $sesion = new Session();
 /*if ($_SESSION['user'] != $baseDatos->getUsuario()){
@@ -29,16 +29,38 @@ $sesion = new Session();
   </head>
   <body>
     <form class="" action="index.html" method="post" onsubmit="">
+      <img src="
+      <?php
+      if ($baseDatos->getGenero() == "Hombre"){
+          echo "http://34.243.177.174/Floridacar/public/images/hombre_generico.jpg";
+      } else {
+          echo "http://34.243.177.174/Floridacar/public/images/mujer_generico.jpg";
+      }
+      ?>" alt="Hombre" height="200" width="200">
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>" readonly><br>
-      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>" readonly><br>
-      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>" readonly><br>
-      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>" readonly><br>
-      <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad" value="<?=$baseDatos->getLocalidad()?>" readonly><br>
-      <input type="text" placeholder="Genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly><br>
-      <input type="button" onclick="location.href='../modificarPerfil.php';" value="actualizar" />
-      <input type="hidden" name="id" value="">
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>" readonly>
+        </div><br>
+        <div>
+            <label for="nombre">Apellidos:</label><br>
+            <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>" readonly>
+        </div><br>
+        <div>
+            <label for="nombre">Telefono:</label><br>
+            <input type="text" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>" readonly>
+        </div><br>
+        <div>
+            <label for="nombre">Ciudad:</label><br>
+            <input type="text" placeholder="ciudad" id="ciudad" name="ciudad" value="<?=$baseDatos->getLocalidad()?>" readonly>
+        </div><br>
+        <div>
+            <label for="nombre">Género:</label><br>
+            <input type="text" placeholder="genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly>
+        </div><br>
+        <input type="button" onclick="location.href='../modificarPerfil.php';" value="Actualizar" />
+    <button onclick="">Volver</button>
     </form>
 
-  <button onclick="">Volver</button>
   </body>
 </html>
