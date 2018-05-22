@@ -69,9 +69,8 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <a href="tarjeta.php">ye</a>
           <?php foreach ($filasTarjetas as $fila){
-              echo "string";
+              echo "<a href='tarjeta.php'>";
               echo "<button type='button' name='button'>";
               echo "<table style='width:200px' border='1px'>";
               echo "<tr>";
@@ -101,6 +100,7 @@
               echo"</td>";
               echo  "</table>";
               echo "</button>";
+              echo "</a>";
               echo "  ";
             }
                 ?>
