@@ -23,6 +23,7 @@ class Usuario extends Db
     private $localidad="";
     private $florida="";
     private $genero="";
+    private $fechanac="";
     private $dni="";
 
 
@@ -348,4 +349,23 @@ inner join persona on persona.dni=perxtar.dni where  perxtar.id_tarjeta=";
 
         return $this;
     }
+    public function getFechanac()
+    {
+        return $this->fechanac;
+    }
+
+    /**
+     * Set the value of Dni
+     *
+     * @param mixed dni
+     *
+     * @return self
+     */
+    public function setFecha($fechanac)
+    {
+        $this->fechanac = $fechanac;
+
+        return $this;
+    }
+
 }
