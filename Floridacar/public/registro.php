@@ -40,7 +40,7 @@
      <div class="texto">
 
      <h1><center>REGISTRO</center></h1>
-     <form class="" action="index.html" method="post"><center>
+     <form class="" action="index.php" method="post"><center>
        <div>
         <label for="name">Usuario:</label>
         <input type="text" placeholder="usuario" id="name" />
