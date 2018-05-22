@@ -32,6 +32,7 @@ $sesion = new Session();
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>" readonly><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>" readonly><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>" readonly><br>
+      <input type="date" placeholder="fecha nacimiento" id="fechanac" name="fechanac" value="<?=$baseDatos->getFechanac()?>" readonly><br>
       <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>" readonly><br>
       <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad" value="<?=$baseDatos->getLocalidad()?>" readonly><br>
       <input type="text" placeholder="Genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly><br>

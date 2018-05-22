@@ -5,6 +5,7 @@ use Car\models\Session;
 
 $baseDatos=new Usuario();
 $baseDatos->getOne('pajoga');
+$baseDatos->leerDatos('pajoga');
 
 $sesion = new Session();
 /*if ($_SESSION['user'] != $baseDatos->getUsuario()){
@@ -19,14 +20,11 @@ $sesion = new Session();
   </head>
   <body>
     <form class="" action="index.html" method="post" onsubmit="">
-      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?php echo $filaUser['usuario']?>"><br>
-      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?php echo $filaUser['nombre']?>"><br>
-      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?php echo $filaUser['apellidos']?>"><br>
-      <input type="date" placeholder="fecha nacimiento" id="fechanac" name="fechanac" value="<?php echo $filaUser['fechanac']?>"><br>
-      <label for="foto">Imagen:</label><br>
-      <input type="file" size="30" id="foto" name="foto" value="<?php echo $filaUser['foto']?>"><br>
-      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?php echo $filaUser['telefono']?>"><br>
-      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?php echo $filaUser['direccion']?>"><br>
+      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>"><br>
+      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>"><br>
+      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>"><br>
+      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>?>"><br>
+      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$baseDatos->getLocalidad()?>"><br>
       <select name="genero" id="genero">
         <option>hombre</option>
         <option>mujer</option>
