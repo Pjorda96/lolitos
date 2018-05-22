@@ -76,7 +76,7 @@
               echo "</td>";
               echo "</tr>";
               echo  "</table>";
-              echo "<a href='tarjeta.php?id=".$fila['id_tarjeta']."'>";
+              echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
               echo "<button type='button' name='button id='button'>";
               echo "Ver más";
               echo "</button>";

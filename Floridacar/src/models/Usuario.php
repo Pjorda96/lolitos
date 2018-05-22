@@ -83,11 +83,11 @@ class Usuario extends Db
     }
 
     public function tarjetaCompleta($id_tarjeta){
-        $tarjetasCompletas="SELECT destino,fecha,precio,salida,plazas,hora,vehiculo
+        $tarjetasCompletas="SELECT destino,fecha,precio,salida,plazas,hora,vehiculo 
         FROM tarjetas where id_tarjeta='$id_tarjeta'";
         $resultado = parent::consultar($tarjetasCompletas);
 
-              return $resultado;
+        return $resultado;
     }
 
 
