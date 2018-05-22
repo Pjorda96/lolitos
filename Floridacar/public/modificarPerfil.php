@@ -4,7 +4,7 @@ use Car\models\Usuario;
 $perfil= new Usuario();
 
 
-//coger el id
+//coger el Usuario
 
 $filaUser = $perfil->getOne($_GET['usuario']);
 include_once("views/modificarPerfilview.php");
