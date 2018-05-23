@@ -6,7 +6,9 @@ use Car\models\Session;
 $tarjeta= new Usuario();
 $filasTarjetas=$tarjeta->listatarjetas();
 
-$sesion= new Session();
-$_SESSION['usuario']='';
+session_start();
+if (!isset($_SESSION['usuario'])){
+    $_SESSION['usuario']='';
+}
 
 include_once("views/indexview.php");
