@@ -15,9 +15,9 @@ $baseDatos->getOne($_GET['usuario']);
 //$baseDatos->leerDatos('dafeca');
 $baseDatos->leerDatos($_GET['usuario']);
 
-session_start();
+/*session_start();
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== $_GET['usuario']){
     header('Location: index.php');
-}
+}*/
 
 require_once 'views/verPerfil.php';

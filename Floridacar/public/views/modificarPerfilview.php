@@ -1,97 +1,20 @@
-<?php
-require_once  __DIR__.'/../../vendor/autoload.php';
-use Car\models\Usuario;
-use Car\models\Session;
-
-$baseDatos=new Usuario();
-$baseDatos->getOne('pajoga');
-$baseDatos->leerDatos('pajoga');
-
-$sesion = new Session();
-/*if ($_SESSION['user'] != $baseDatos->getUsuario()){
-    header('Location: index.php');
-}*/
- ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <style media="screen" type="text/css">
-    * {
-      box-sizing: border-box;
-    }
-
-    form {
-      padding: 1em;
-      background: #f9f9f9;
-      border: 1px solid #c1c1c1;
-      margin-top: 2rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 1em;
-    }
-    form input {
-      margin-bottom: 1rem;
-      background: #fff;
-      border: 1px solid #9c9c9c;
-    }
-    form button {
-      background: lightgrey;
-      padding: 0.7em;
-      border: 0;
-    }
-    form button:hover {
-      background: gold;
-    }
-
-    label {
-      text-align: right;
-      display: block;
-      padding: 0.5em 1.5em 0.5em 0;
-    }
-
-    input {
-      width: 100%;
-      padding: 0.7em;
-      margin-bottom: 0.5rem;
-    }
-    input:focus {
-      outline: 3px solid gold;
-    }
-
-    @media (min-width: 400px) {
-      form {
-        overflow: hidden;
-      }
-
-      label {
-        float: left;
-        width: 200px;
-      }
-
-      input {
-        float: left;
-        width: calc(100% - 200px);
-      }
-
-      button {
-        float: right;
-        width: calc(100% - 200px);
-      }
-    }
-    </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modificarPerfilView.css">
 
 
-    <meta charset="utf-8">
+
+      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>FloridaCar</title>
 
     <!-- Bootstrap core CSS -->
