@@ -41,7 +41,7 @@
               <ul class="list-unstyled">
                 <li><a href="perfil.php" class="text-white">Ver perfil</a></li>
                 <li><a href="login.php" class="text-white">Iniciar Sesion</a></li>
-                <li><a href="" class="text-white">Registararse</a></li>
+                <li><a href="registro.php" class="text-white">Registrarse</a></li>
                 <li><a href="#" class="text-white">Cerrar sesion</a></li>
               </ul>
             </div>
