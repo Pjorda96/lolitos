@@ -75,6 +75,11 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
+          <button type="button" class="btn-price" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
+
+          <br>
+          <br>
+          <br>
           <?php foreach ($filasTarjetas as $fila){
               echo "<table style='width:250px' border='4px solid' bgcolor='#ADD8E6'>";
               echo "<tr>";
