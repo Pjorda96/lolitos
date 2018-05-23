@@ -78,31 +78,31 @@ $sesion = new Session();
 
 
        <div class="album py-5 bg-light">
-         <div class="tarjeta">
-           <table style="width:100%" border="1px ">
+         <div class="tarjeta" style="text-align:center ">
+           <table style="width:70%; margin: 0 auto; background-color:#ADD8E6; border-style:double; border-width:thick;" border="solid">
              <tr>
-               <td>Salida:<?php foreach ($pantallaTarjeta as $fila)  {echo $fila['salida'];} ?></td>
-               <td align="right">Destino:<?php foreach ($pantallaTarjeta as $fila) {echo $fila['destino'];} ?></td>
+               <td><strong>Salida: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['salida'];} ?></td>
+               <td><strong>Destino: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['destino'];} ?></td>
              </tr>
              <tr>
-               <td>Fecha:<?php foreach ($pantallaTarjeta as $fila) {echo $fila['fecha'];} ?></td>
-               <td colspan="4" align="right">Foto</td>
+               <td><strong>Fecha: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['fecha'];} ?></td>
+               <td rowspan="4">Foto</td>
              </tr>
              <tr>
-               <td>Hora:<?php foreach ($pantallaTarjeta as $fila) {echo $fila['hora'];} ?></td>
+               <td><strong>Hora: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['hora'];} ?></td>
              </tr>
              <tr>
-               <td>Precio<?php foreach ($pantallaTarjeta as $fila) {echo $fila['precio'];} ?></td>
+               <td><strong>Precio: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['precio'];} ?></td>
              </tr>
              <tr>
-               <td>Plazas:<?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
+               <td><strong>Plazas: </strong>Plazas: <?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
              </tr>
              <tr>
-               <td>Vehiculo:<?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
+               <td><strong>Vehiculo: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
+               <td align="right"></td>
              </tr>
            </table>
            <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">
-
 
      </main>
 
@@ -117,40 +117,3 @@ $sesion = new Session();
      <script src="../../../../assets/js/vendor/holder.min.js"></script>
    </body>
  </html>
-
-
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/tarjeta.css">
-  </head>
-  <body>
-
-    <div class="tarjeta">
-      <table style="width:100%" border="1px ">
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['salida'];} ?></td>
-          <td align="right"><?php foreach ($pantallaTarjeta as $fila) {echo $fila['destino'];} ?></td>
-        </tr>
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['fecha'];} ?></td>
-          <td colspan="4" align="right">Foto</td>
-        </tr>
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['hora'];} ?></td>
-        </tr>
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['precio'];} ?></td>
-        </tr>
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
-        </tr>
-        <tr>
-          <td><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
-          <td align="right"></td>
-        </tr>
-      </table>
-      <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">
-  </body>
-</html>
