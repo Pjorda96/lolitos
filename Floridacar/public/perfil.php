@@ -10,10 +10,10 @@ require_once  __DIR__.'/../vendor/autoload.php';
 use Car\models\Usuario;
 
 $baseDatos=new Usuario();
-//$baseDatos->getOne('dafeca');
-$baseDatos->getOne($_GET['usuario']);
-//$baseDatos->leerDatos('dafeca');
-$baseDatos->leerDatos($_GET['usuario']);
+$baseDatos->getOne('dafeca');
+//$baseDatos->getOne($_GET['usuario']);
+$baseDatos->leerDatos('dafeca');
+//$baseDatos->leerDatos($_GET['usuario']);
 
 /*session_start();
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== $_GET['usuario']){

@@ -9,7 +9,9 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'] !== $_GET['usuario']){
 }*/
 
 //coger el Usuario
-$filaUser = $perfil->getOne($_GET['usuario']);
+$filaUser = $perfil->getOne('dafeca');
+//$filaUser = $perfil->getOne($_GET['usuario']);
+
 
 include_once("views/modificarPerfilview.php");
 
