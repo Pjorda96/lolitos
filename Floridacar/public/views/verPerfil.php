@@ -58,7 +58,7 @@
       </div>
     </header>
     </div>
-      <div class="container" align="center">
+      <div class="container" align="center" style="width:15%">
       <img src="
       <?php
       if ($baseDatos->getGenero() == "Hombre"){
@@ -69,26 +69,34 @@
       ?>" alt="Hombre" height="200" width="200">
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>" readonly><br>
         <div>
+          <div style="text-align:left">
             <label for="nombre">Nombre:</label><br>
+          </div>
             <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>" readonly>
         </div><br>
         <div>
+          <div style="text-align:left">
             <label for="nombre">Apellidos:</label><br>
+          </div>
             <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>" readonly>
         </div><br>
         <div>
+          <div style="text-align:left">
             <label for="nombre">Telefono:</label><br>
+          </div>
             <input type="text" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>" readonly>
         </div><br>
         <div>
-          <div class="label" style="text-align:left" >
+          <div style="text-align:left" >
             <label for="nombre">Ciudad:</label><br>
           </div>
 
             <input type="text" placeholder="ciudad" id="ciudad" name="ciudad" value="<?=$baseDatos->getLocalidad()?>" readonly>
         </div><br>
         <div>
-            <label for="nombre">Género:</label><br>
+            <div style="text-align:left">
+              <label for="nombre">Género:</label><br>
+            </div>
             <input type="text" placeholder="genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly>
         </div><br>
         <input type="button" onclick="location.href='modificarPerfil.php';" value="Actualizar" />
