@@ -7,9 +7,8 @@
  */
 
 require_once __DIR__.'/../vendor/autoload.php';
-use Car\models\Session;
-
-$logout= new Session();
-$logout->cerrarSesion();
+session_start();
+$_SESSION=[];
+session_destroy();
 
 header('Location: index.php');

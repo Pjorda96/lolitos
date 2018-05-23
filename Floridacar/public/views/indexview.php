@@ -31,7 +31,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">Quienes somos?</h4>
+              <h4 class="text-white">¿Quienes somos?</h4>
               <p class="text-muted">Somos un grupo de estudiantes de primer año del modulo superior de Desarollo de Aplicaciones Web que hemos decidido crear FloridaCar una empresa enfocada al transporte de alumnos al centro de la Florida o de esta al destino que les interese.
               Nuestro fin con este programa es ayudar a los alumnos a moverse de un modo economico y de una manera eficiente,en la que principalmente los alumnos sin vehículo no dependan del transporte publico.
             </p>
@@ -39,11 +39,11 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="perfil.php" class="text-white">Ver perfil</a></li>
-                <?php if ($_SESSION['admin']!=''){
-                    echo '<li><a href=\"login.php\" class=\"text-white\">Iniciar Sesión</a></li>';
+                <?php if (!isset($_SESSION['usuario'])){
+                    echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
                 }else {
-                    echo '<li><a href=\"cerrarSesion.php\" class=\"text-white\">Cerrar Sesión</a></li>';
+                    echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
+                    echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
                 }?>
               </ul>
             </div>
