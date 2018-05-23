@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 
  <html lang="en">
+=======
+<html lang="en">
+>>>>>>> 09f9d8fd5c8e73338fbfbab08319e667a161758f
    <head>
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
