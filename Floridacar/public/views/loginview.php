@@ -90,7 +90,7 @@
 
   <div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100 p-t-50 p-b-90">
+			<div class="wrap-login100 p-t-10 p-b-20">
 				<form class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-51">
 						Login
@@ -111,15 +111,17 @@
 					<div class="flex-sb-m w-full p-t-3 p-b-24">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
+
+
+                <a href="registro.php" class="txt1">
+                  Registrarse
+                </a>
+
+
 						</div>
 
 						<div>
-							<a href="registro.php" class="txt1">
-								Registrarse
-							</a>
+	
 						</div>
 					</div>
 
