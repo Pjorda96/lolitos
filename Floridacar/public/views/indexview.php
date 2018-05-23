@@ -68,7 +68,7 @@
       <div class="album py-5 bg-light">
         <div class="container">
           <?php foreach ($filasTarjetas as $fila){
-              echo "<table style='width:250px' border='1px' bgcolor=''>";
+              echo "<table style='width:250px' border='4px solid' bgcolor='#ADD8E6'>";
               echo "<tr>";
               echo "<td>";
               echo "Salida: ".$fila['salida'];
