@@ -2,6 +2,9 @@
 
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -28,15 +31,18 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              <h4 class="text-white">Quienes somos?</h4>
+              <p class="text-muted">Somos un grupo de estudiantes de primer año del modulo superior de Desarollo de Aplicaciones Web que hemos decidido crear FloridaCar una empresa enfocada al transporte de alumnos al centro de la Florida o de esta al destino que les interese.
+              Nuestro fin con este programa es ayudar a los alumnos a moverse de un modo economico y de una manera eficiente,en la que principalmente los alumnos sin vehículo no dependan del transporte publico.
+            </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
+                <li><a href="" class="text-white">Ver perfil</a></li>
+                <li><a href="#" class="text-white">Iniciar Sesion</a></li>
+                <li><a href="#" class="text-white">Registararse</a></li>
+                <li><a href="#" class="text-white">Cerrar sesion</a></li>
               </ul>
             </div>
           </div>
@@ -47,7 +53,10 @@
           <a href="#" class="navbar-brand d-flex align-items-center">
             <i class="fas fa-car"></i>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
             <strong>FloridaCar</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,6 +67,8 @@
     </header>
 
     <main role="main">
+
+
       <div class="album py-5 bg-light">
         <div class="container">
           <?php foreach ($filasTarjetas as $fila){
@@ -79,7 +90,7 @@
               echo "</td>";
               echo "</tr>";
               echo  "</table>";
-              echo "<a href='tarjeta.php?id=".$fila['id_tarjeta']."'>";
+              echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
               echo "<button type='button' name='button id='button'>";
               echo "Ver más";
               echo "</button>";
