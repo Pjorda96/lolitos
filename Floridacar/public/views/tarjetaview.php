@@ -1,18 +1,4 @@
-<?php
-require_once  __DIR__.'/../../vendor/autoload.php';
-use Car\models\Usuario;
-use Car\models\Session;
-
-$baseDatos=new Usuario();
-$baseDatos->getOne('pajoga');
-
-$sesion = new Session();
-/*if ($_SESSION['user'] != $baseDatos->getUsuario()){
-    header('Location: index.php');
-}*/
- ?>
-
- <html lang="en">
+<html lang="en">
    <head>
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
