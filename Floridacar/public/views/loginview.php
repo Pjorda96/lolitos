@@ -1,14 +1,11 @@
-<?php
-require_once  __DIR__.'/../../vendor/autoload.php';
-use Car\models\Usuario;
- ?>
+
  <!DOCTYPE html>
  <html>
    <head>
      <meta charset="utf-8">
      <title>Inicio de Sesión</title>
      <link rel="stylesheet" href="https://www.floridaoberta.com/theme/adaptable/style/font-awesome.min.css">
-     <link rel="stylesheet" href="../css/login.css">
+     <link rel="stylesheet" href="css/login.css">
      <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 
@@ -29,13 +26,13 @@ use Car\models\Usuario;
 <!--===============================================================================================-->
  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
- <link rel="stylesheet" type="text/css" href="../css/util.css">
- <link rel="stylesheet" type="text/css" href="../css/main.css">
+ <link rel="stylesheet" type="text/css" href="css/util.css">
+ <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
    <body>
 
-                 <div class="limiter">
+  <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
 				<form class="login100-form validate-form flex-sb flex-w">

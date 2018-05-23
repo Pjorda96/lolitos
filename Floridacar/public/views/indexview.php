@@ -21,6 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 
   <body>
@@ -52,6 +53,10 @@
           <a href="#" class="navbar-brand d-flex align-items-center">
             <i class="fas fa-car"></i>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/master
             <strong>FloridaCar</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,16 +68,6 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">FloridaCar</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div>
-      </section>
 
       <div class="album py-5 bg-light">
         <div class="container">

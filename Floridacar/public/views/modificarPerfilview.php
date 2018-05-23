@@ -19,7 +19,7 @@ $sesion = new Session();
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="post" onsubmit="">
+    <form class="" action="verPerfil.php" method="post" onsubmit="">
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>"><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>"><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>"><br>
