@@ -22,6 +22,7 @@ class Tarjeta extends Db
     private $vehiculo="";
     private $plazas="";
     private $hora="";
+    private $dni="";
 
 
 
@@ -36,4 +37,5 @@ class Tarjeta extends Db
     ('$destino','$fecha','$precio','$salida','$vehiculo','$plazas','$hora')";
         $registro = parent::consultar($insertar);
     }
+    public function apuntarse(&)
   }
