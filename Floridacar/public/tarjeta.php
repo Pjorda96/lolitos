@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
+session_start();
 use Car\models\Usuario;
 $tarjeta= new Usuario();
 $pantallaTarjeta=$tarjeta->tarjetaCompleta($_GET['id_tarjeta']);
