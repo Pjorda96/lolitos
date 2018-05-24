@@ -46,18 +46,7 @@
                     }
                     ?></h4>
                 <ul class="list-unstyled">
-                    <?php if (!isset($_SESSION['usuario'])){
-                        echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
-                    }else {
-                        echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
-                        echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
-                    }
-                    /*if (!isset($_SESSION['usuario'])){
-                        echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
-                        echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
-                    }else {
-                        echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
-                    }*/?>
+                    <li><a href="login.php" class="text-white">Iniciar Sesión</a></li>?>
                 </ul>
             </div>
         </div>

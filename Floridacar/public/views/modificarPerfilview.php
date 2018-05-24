@@ -26,12 +26,12 @@
     <title>FloridaCar</title>
   </head>
   <body>
-    <form class="" action="verPerfil.php" method="post" onsubmit="">
-      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>"><br>
-      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$baseDatos->getNombre()?>"><br>
-      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$baseDatos->getApellidos()?>"><br>
-      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$baseDatos->getTelefono()?>?>"><br>
-      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$baseDatos->getLocalidad()?>"><br>
+    <form class="" action="perfil.php" method="post" onsubmit="">
+      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$perfil->getUsuario()?>"><br>
+      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
+      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
+      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$perfil->getTelefono()?>"><br>
+      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$perfil->getLocalidad()?>"><br>
       <select name="genero" id="genero">
         <option>hombre</option>
         <option>mujer</option>
