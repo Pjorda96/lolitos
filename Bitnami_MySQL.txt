@@ -1,3 +1,6 @@
 /opt/bitnami/mysql/bin/
 mysql -u root -p
 Ym1B6bbDUfl5
+
+mysql -u lolazos -p
+lolitos
