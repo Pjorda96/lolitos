@@ -14,11 +14,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>FloridaCar</title>
-    <style >
-      body{
-        background-image:url('/images/fondo.png');
-      }
-    </style>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +36,7 @@
           </p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Menú</h4>
+            <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled">
               <li><a href="perfil.php" class="text-white">Ver perfil</a></li>
               <li><a href="login.php" class="text-white">Iniciar Sesion</a></li>
@@ -66,28 +61,29 @@
     </div>
   </header>
      <h1><center>REGISTRO</center></h1>
-     <form class="" action="" onsubmit="js/validarInsertar()" method="post">
-      <div>
+     <div class="container" align="center" style="width:15%">
+     <form class="" action="" onsubmit="validarInsertar()" method="post">
+      <div style="text-align:left">
         <label for="nombre">Nombre:</label><br>
         <input type="text" name="nombre" placeholder="nombre" id="nombre" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="apellidos">Apellidos:</label><br>
         <input type="text" name="apellidos" placeholder="apellidos" id="apellidos" />
     </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="telefono">Teléfono:</label><br>
         <input type="tel" name="telefono" placeholder="telefono" id="telefono" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="ciudad">Ciudad:</label><br>
         <input type="text" name="ciudad" placeholder="Ciudad" id="ciudad" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="correoflorida">Correo Florida:</label><br>
         <input type="text" name="correoflorida" placeholder="correo florida" id="correoflorida" /><label for="correoflorida">@floridauniversitaria.es</label>
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="genero">Género:</label><br>
         <select name="genero" name="genero" id="genero">
           <option>--Seleccione--</option>
@@ -95,18 +91,19 @@
           <option value="Mujer">Femenino</option>
         </select>
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="dni">DNI:</label><br>
         <input type="text" name="dni" id="dni" />
       </div><br>
-      <div>
+      <div style="text-align:left">
           <label for="password">Contraseña:</label><br>
           <input type="password" name="password" placeholder="password" id="password" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <input type="submit" name="crear" value="Crear cuenta">
       </div>
     </form>
+         </div>
   <script src="../js/validarInsertar.js"></script>
   </body>
 </html>
