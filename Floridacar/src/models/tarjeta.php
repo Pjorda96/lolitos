@@ -22,10 +22,11 @@ class Tarjeta extends Db
     private $vehiculo="";
     private $plazas="";
     private $hora="";
+    private $dni="";
 
 
 
-    function __construct()
+      function __construct()
     {
         parent::__construct();
         parent::conectar();
@@ -35,5 +36,9 @@ class Tarjeta extends Db
         $insertar="INSERT into tarjeta (destino,fecha,precio,salida,vehiculo,plazas,hora) values
     ('$destino',$fecha,$precio,'$salida','$vehiculo',$plazas,$hora)";
         $registro = parent::consultar($insertar);
+    }
+    public function apuntarse($dni, $id_tarjeta){
+        $apuntar="INSERT into perxtar (dni, id_tarjeta) values ($dni, $id_tarjeta)";
+        $registroapuntarse = parent::consultar($apuntar);
     }
   }
