@@ -106,6 +106,7 @@
              </tr>
            </table>
            <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse">
+           <button type="button" class="btn-price" onclick="location.href='index.php';"> Volver </button>
 
      </main>
 
