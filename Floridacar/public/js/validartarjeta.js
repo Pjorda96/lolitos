@@ -23,7 +23,7 @@ function validarTarjeta() {
   } else if (vehiculo == "") {
     alert("El campo vehiculo esta vacio");
     return false;
-  } else if (plazas == "") {
+  } else if (plazas == 0) {
     alert("El campo plazas esta vacio");
     return false;
   }  else if (hora == "") {

@@ -33,7 +33,7 @@ class Tarjeta extends Db
 
     public function insertarTarjeta($destino,$fecha,$precio,$salida,$vehiculo,$plazas,$hora){
         $insertar="INSERT into tarjeta (destino,fecha,precio,salida,vehiculo,plazas,hora) values
-    ('$destino','$fecha','$precio','$salida','$vehiculo','$plazas','$hora')";
+    ('$destino',$fecha,$precio,'$salida','$vehiculo',$plazas,$hora)";
         $registro = parent::consultar($insertar);
     }
   }
