@@ -19,6 +19,7 @@
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+     <link href="css/botones.css" rel="stylesheet">
     <link href="css/album.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -36,7 +37,7 @@
         <option>hombre</option>
         <option>mujer</option>
       </select>
-      <input type="submit" name="Enviar" value="Enviar">
+      <input type="submit" class="btn" name="Enviar" value="Enviar">
       <input type="hidden" name="id" value="">
     </form>
   </body>

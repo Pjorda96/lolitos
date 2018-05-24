@@ -16,6 +16,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>FloridaCar</title>
     <style>
+
       body { background-image: url("images/fondo.png") }
     </style>
 
@@ -23,6 +24,7 @@
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/botones.css" rel="stylesheet">
     <link href="css/album.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
@@ -84,7 +86,7 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <button type="button" class="btn-price" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
+          <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
 
           <br>
           <br>
@@ -109,8 +111,9 @@
               echo "</tr>";
               echo  "</table>";
               echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
-              echo "<button type='button' name='button id='button'>";
+              echo "<button class='btn' type='button' name='button id='button'>";
               echo "Ver más";
+              echo "<span class='arrow'>  ❯  </span>";
               echo "</button>";
               echo "</a>";
               echo "  "."<br><br>";
