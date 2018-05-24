@@ -61,7 +61,7 @@
     </div>
   </header>
      <h1><center>Tarjeta</center></h1>
-     <form class="" action="crearTarjeta.php" onsubmit="validarInsertar()" method="post">
+     <form class="" action="crearTarjeta.php" onsubmit="validarTarjeta()" method="post">
       <div>
         <label for="destino">Destino:</label><br>
         <input type="text" name="destino" placeholder="destino" id="destino" />
