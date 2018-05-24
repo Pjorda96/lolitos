@@ -28,6 +28,8 @@
   </head>
   <body>
     <form class="" action="perfil.php" method="post" onsubmit="">
+      <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
+
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$perfil->getUsuario()?>"><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
@@ -37,7 +39,9 @@
         <option>hombre</option>
         <option>mujer</option>
       </select>
-      <input type="submit" class="btn" name="Enviar" value="Enviar">
+
+      <input type="submit" class="btn" name="Enviar" value="Enviar">  <br>
+
       <input type="hidden" name="id" value="">
     </form>
   </body>

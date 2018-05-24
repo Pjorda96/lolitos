@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/album.css" rel="stylesheet">
+      <link href="css/botones.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
@@ -114,8 +115,8 @@
             </div>
             <input type="text" placeholder="genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly>
         </div><br>
-        <input type="button" onclick="location.href='modificarPerfil.php';" value="Actualizar" />
-    <button type="button" class="btn-price" onclick="location.href='index.php';"> Volver </button>
+        <input class="btn" type="button" onclick="location.href='modificarPerfil.php';" value="Actualizar" />
+    <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
 
   </div>
 

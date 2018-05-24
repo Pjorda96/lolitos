@@ -49,7 +49,8 @@
                    <ul class="list-unstyled">
                        <?php if (!isset($_SESSION['usuario'])){
                            echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
-                       }else {
+                       }
+                       else {
                            echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
                            echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
                        }
@@ -106,7 +107,7 @@
                <td align="right"></td>
              </tr>
            </table>
-           <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse"><span class="arrow">❯</span>
+           <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse" class="btn">
            <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span> </button>
 
      </main>
