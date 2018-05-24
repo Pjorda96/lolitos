@@ -61,28 +61,29 @@
     </div>
   </header>
      <h1><center>REGISTRO</center></h1>
+     <div class="container" align="center" style="width:15%">
      <form class="" action="" onsubmit="validarInsertar()" method="post">
-      <div>
+      <div style="text-align:left">
         <label for="nombre">Nombre:</label><br>
         <input type="text" name="nombre" placeholder="nombre" id="nombre" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="apellidos">Apellidos:</label><br>
         <input type="text" name="apellidos" placeholder="apellidos" id="apellidos" />
     </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="telefono">Teléfono:</label><br>
         <input type="tel" name="telefono" placeholder="telefono" id="telefono" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="ciudad">Ciudad:</label><br>
         <input type="text" name="ciudad" placeholder="Ciudad" id="ciudad" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="correoflorida">Correo Florida:</label><br>
         <input type="text" name="correoflorida" placeholder="correo florida" id="correoflorida" /><label for="correoflorida">@floridauniversitaria.es</label>
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="genero">Género:</label><br>
         <select name="genero" name="genero" id="genero">
           <option>--Seleccione--</option>
@@ -90,18 +91,19 @@
           <option value="Mujer">Femenino</option>
         </select>
       </div><br>
-      <div>
+      <div style="text-align:left">
         <label for="dni">DNI:</label><br>
         <input type="text" name="dni" id="dni" />
       </div><br>
-      <div>
+      <div style="text-align:left">
           <label for="password">Contraseña:</label><br>
           <input type="password" name="password" placeholder="password" id="password" />
       </div><br>
-      <div>
+      <div style="text-align:left">
         <input type="submit" name="crear" value="Crear cuenta">
       </div>
     </form>
+         </div>
   <script src="../js/validarInsertar.js"></script>
   </body>
 </html>
