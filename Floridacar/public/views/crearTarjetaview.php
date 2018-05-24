@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <script src="js/validarTarjeta.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,7 +62,7 @@
   </header>
      <h1><center>Tarjeta</center></h1>
      <div class="container" align="center" style="width:15%">
-     <form action="crearTarjeta.php" onsubmit="js/validarTarjeta()" method="post">
+     <form action="crearTarjeta.php" onsubmit="validarTarjeta()" method="post">
       <div style="text-align:left">
         <label for="destino">Destino:</label><br>
         <input type="text" name="destino" placeholder="destino" id="destino" />
