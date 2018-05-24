@@ -91,7 +91,6 @@
              </tr>
              <tr>
                <td><strong>Fecha: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['fecha'];} ?></td>
-               <td rowspan="4">Foto</td>
              </tr>
              <tr>
                <td><strong>Hora: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['hora'];} ?></td>
