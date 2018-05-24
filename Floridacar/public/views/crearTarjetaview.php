@@ -22,6 +22,8 @@
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/botones.css" rel="stylesheet">
+
     <link href="css/album.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <meta charset="utf-8">
@@ -109,8 +111,8 @@
           <input type="time" name="hora" placeholder="hora" id="hora" />
       </div><br>
       <div style="text-align:left">
-        <input type="submit" name="crear" value="Crear tarjeta">
-        <button type="button" class="btn-price" onclick="location.href='index.php';"> Volver </button>
+        <input  class="btn" type="submit" name="crear" value="Crear tarjeta">
+        <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
       </div>
     </form>
       </div>
