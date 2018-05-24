@@ -140,7 +140,7 @@
 					</div>
 
 					<div class="container-login100-form-btn m-t-17">
-						<button class="login100-form-btn" style="background-color: #007bff">
+						<button class="login100-form-btn" name="login" style="background-color: #007bff">
 							Login
 						</button>
 					</div>

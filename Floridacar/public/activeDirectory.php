@@ -1,5 +1,17 @@
 <?php
+
+require_once  __DIR__.'/../vendor/autoload.php';
+
+use Car\models\Login;
+
+$login=new Login();
+
 session_start();
+
+if ($_SESSION['usuario'] !== 'admin'){
+    $login->validate($_POST['username'],$_POST['pass']);
+}
+
     $adServer = "ldap://10.2.72.98";
 
     $ldap = ldap_connect($adServer);

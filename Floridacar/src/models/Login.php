@@ -23,23 +23,18 @@ class Login extends Db
     {
         $pass = hash("haval160,4", $contrasenya);
 
-        $passw = "SELECT contrasenya from usuarios where usuario='" . $usuario . "'";
+        $passw = "SELECT contrasenya from persona where usuario='" . $usuario . "'";
         $resultado = parent::consultar($passw);
         foreach ($resultado as $fila) {
             $contrasenyaDb = $fila['contrasenya'];
         }
 
         if ($pass === $contrasenyaDb) {
-            if ($usuario==="admin") {
-                $_SESSION['usuario'] = "admin";
-                header('Location: .php');
-            }else {
-                $_SESSION['usuario'] = $usuario;
-                var_dump($_SESSION['usuario']);
-                header('Location: .php');
-            }
-        }else {
+            $_SESSION['usuario'] = $usuario;
+            //var_dump($_SESSION['usuario']);
             header('Location: index.php');
+        }else {
+            header('Location: login.php');
         }
     }
 }
