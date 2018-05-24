@@ -61,15 +61,29 @@
                Nuestro fin con este programa es ayudar a los alumnos a moverse de un modo economico y de una manera eficiente,en la que principalmente los alumnos sin vehículo no dependan del transporte publico.
              </p>
              </div>
-             <div class="col-sm-4 offset-md-1 py-4">
-               <h4 class="text-white">Contact</h4>
-               <ul class="list-unstyled">
-                 <li><a href="perfil.php" class="text-white">Ver perfil</a></li>
-                 <li><a href="login.php" class="text-white">Iniciar Sesion</a></li>
-                 <li><a href="registro.php" class="text-white">Registrarse</a></li>
-                 <li><a href="#" class="text-white">Cerrar sesion</a></li>
-               </ul>
-             </div>
+               <div class="col-sm-4 offset-md-1 py-4">
+                   <h4 class="text-white"><?php
+                       if (!isset($_SESSION['usuario'])){
+                           echo 'Login';
+                       }else {
+                           echo $_SESSION['usuario'];
+                       }
+                       ?></h4>
+                   <ul class="list-unstyled">
+                       <?php if (!isset($_SESSION['usuario'])){
+                           echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
+                       }else {
+                           echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
+                           echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
+                       }
+                       /*if (!isset($_SESSION['usuario'])){
+                           echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
+                           echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
+                       }else {
+                           echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
+                       }*/?>
+                   </ul>
+               </div>
            </div>
          </div>
        </div>
@@ -91,7 +105,7 @@
   <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-10 p-b-20">
-				<form class="login100-form validate-form flex-sb flex-w">
+				<form class="login100-form validate-form flex-sb flex-w" action="activeDirectory.php" method="post">
 					<span class="login100-form-title p-b-51">
 						Login
 					</span>

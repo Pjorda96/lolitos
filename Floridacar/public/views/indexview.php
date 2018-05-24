@@ -15,6 +15,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>FloridaCar</title>
+    <style>
+      body { background-image: url("images/fondo.png") }
+    </style>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,20 +40,26 @@
             </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
+                <h4 class="text-white"><?php
+                    if (!isset($_SESSION['usuario'])){
+                        echo 'Login';
+                    }else {
+                        echo $_SESSION['usuario'];
+                    }
+                    ?></h4>
               <ul class="list-unstyled">
-                <?php /*if (!isset($_SESSION['usuario'])){
+                <?php if (!isset($_SESSION['usuario'])){
                     echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
                 }else {
                     echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
                     echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
-                }*/
-                if (!isset($_SESSION['usuario'])){
+                }
+                /*if (!isset($_SESSION['usuario'])){
                     echo '<li><a href="perfil.php" class="text-white">Ver perfil</a></li>';
                     echo '<li><a href="cerrarSesion.php" class="text-white">Cerrar Sesión</a></li>';
                 }else {
                     echo '<li><a href="login.php" class="text-white">Iniciar Sesión</a></li>';
-                }?>
+                }*/?>
               </ul>
             </div>
           </div>
