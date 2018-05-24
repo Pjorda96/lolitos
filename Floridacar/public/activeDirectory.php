@@ -22,6 +22,6 @@ session_start();
         $_SESSION['usuario'] = $_POST['username'];
         header('Location: index.php');
     } else {
-        $msg = false;
+        header('Location: login.php');
     }
     echo $msg;
