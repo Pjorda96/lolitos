@@ -36,7 +36,7 @@
           </p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Contact</h4>
+            <h4 class="text-white">Menú</h4>
             <ul class="list-unstyled">
               <li><a href="perfil.php" class="text-white">Ver perfil</a></li>
               <li><a href="login.php" class="text-white">Iniciar Sesion</a></li>
@@ -62,7 +62,7 @@
   </header>
      <h1><center>Tarjeta</center></h1>
      <div class="container" align="center" style="width:15%">
-     <form action="crearTarjeta.php" onsubmit="validarInsertar()" method="post">
+     <form action="crearTarjeta.php" onsubmit="js/validarTarjeta()" method="post">
       <div style="text-align:left">
         <label for="destino">Destino:</label><br>
         <input type="text" name="destino" placeholder="destino" id="destino" />
