@@ -35,7 +35,9 @@ class Tarjeta extends Db
     public function insertarTarjeta($destino,$fecha,$precio,$salida,$vehiculo,$plazas,$hora){
         $insertar="INSERT into tarjetas (destino,fecha,precio,salida,vehiculo,plazas,hora) values
     ('$destino','$fecha',$precio,'$salida','$vehiculo',$plazas,'$hora')";
-        $registro = parent::consultar($insertar);
+        var_dump($insertar);
+        parent::consultar($insertar);
+        header('Location: index.php');
     }
     /*public function traerDNI(){
       $traerDNI=;

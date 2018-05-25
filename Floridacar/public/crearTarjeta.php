@@ -9,9 +9,9 @@ if (!isset($_SESSION['usuario'])){
 
 $tarjetanew= new Tarjeta();
 if (isset($_POST["crear"])){
-$tarjetanew->insertarTarjeta($_POST['destino'],$_POST['fecha'],$_POST['precio'],$_POST['salida'],$_POST['vehiculo'],
+    $tarjetanew->insertarTarjeta($_POST['destino'],$_POST['fecha'],$_POST['precio'],$_POST['salida'],$_POST['vehiculo'],
     $_POST['plazas'],$_POST['hora']);
-header('Location: index.php');
+//header('Location: index.php');
 }
 
 include_once("views/crearTarjetaView.php");
