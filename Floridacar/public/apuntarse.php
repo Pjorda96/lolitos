@@ -8,5 +8,4 @@ $user=new Usuario();
 
 $user->leerDatos($_SESSION['usuario']);
 $dni=$user->getDni();
-var_dump($dni);
 $apuntartarjeta=$apuntarse->apuntarse($dni,$_GET['id_tarjeta']);

@@ -42,6 +42,15 @@ class Tarjeta extends Db
     }*/
     public function apuntarse($dni, $id_tarjeta){
         $apuntar="INSERT into perxtar (dni, id_tarjeta) values ('$dni', $id_tarjeta)";
-        $registroapuntarse = parent::consultar($apuntar);
+        parent::consultar($apuntar);
+        header("Location: tarjeta.php");
+    }
+    public function restaApuntar($id_tarjeta)
+    {
+      $actualizar="UPDATE tarjetas set plazas=old.plazas-1
+      where usuario='".$_SESSION['usuario']."';";
+      var_dump($actualizar);
+      parent::consultar($actualizar);
+      header('Location: perfil.php');
     }
   }
