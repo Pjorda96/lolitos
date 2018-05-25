@@ -92,8 +92,13 @@
           <br>
           <br>
           <br>
-          <?php foreach ($filasTarjetas as $fila){
-              echo "<table style='width:250px' border='4px solid' bgcolor='#ADD8E6'>";
+          <table>
+            <tr>
+          <?php
+          $contador=1;
+          foreach ($filasTarjetas as $fila){
+              echo "<td>";
+              echo "<table style='width:300px height:300px' border='4px solid' bgcolor='#ADD8E6'>";
               echo "<tr>";
               echo "<td>";
               echo "Salida: ".$fila['salida'];
@@ -117,9 +122,16 @@
               echo "<span class='arrow'>  ❯  </span>";
               echo "</button>";
               echo "</a>";
+              echo "</td>";
+              if ($contador%2==0) {
+                echo "</tr>";
+                echo "<tr>";
+              }
+              $contador++;
             }
                 ?>
-
+              </tr>
+          </table>
     </main>
 
 
