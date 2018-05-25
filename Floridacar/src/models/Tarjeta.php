@@ -41,7 +41,7 @@ class Tarjeta extends Db
       $traerDNI=;
     }*/
     public function apuntarse($dni, $id_tarjeta){
-        $apuntar="INSERT into perxtar (dni, id_tarjeta) values ($dni, $id_tarjeta)";
+        $apuntar="INSERT into perxtar (dni, id_tarjeta) values ('$dni', $id_tarjeta)";
         $registroapuntarse = parent::consultar($apuntar);
     }
   }
