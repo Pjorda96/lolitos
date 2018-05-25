@@ -81,7 +81,7 @@
 
      <main role="main">
          <div class="tarjeta" style="height:100%; width:100%; text-align:center;padding-top:50px">
-           <table style="width:70%; margin: 0 auto; background-color:#ADD8E6; border-style:double; border-width:thick;" border="solid">
+           <table style="width:70%; margin: 0 auto; background-image: url(../images/fondo.png) no-repeat; border-style:double; border-width:thick;" border="solid">
              <tr>
                <td><strong>Salida: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['salida'];} ?></td>
              <tr>
@@ -98,7 +98,7 @@
                <td><strong>Precio: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['precio'];} ?></td>
              </tr>
              <tr>
-               <td><strong>Plazas: </strong>Plazas: <?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
+               <td><strong>Plazas: </strong> <?php foreach ($pantallaTarjeta as $fila) {echo $fila['plazas'];} ?></td>
              </tr>
              <tr>
                <td><strong>Vehiculo: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
