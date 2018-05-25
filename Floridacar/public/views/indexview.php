@@ -18,6 +18,8 @@
     <style>
       .contenedor{
         width: auto;
+        text-align: center;
+        padding-left: 375px;
       }
       body { background-image: url("images/fondo.png") }
     </style>
@@ -86,14 +88,19 @@
     <main role="main">
 
 
-      <div class="album py-5 bg-light">
+      <div class="album py-5 bg-light" style="text-align: center;">
+        <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
         <div class="contenedor">
-          <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
           <br>
           <br>
           <br>
-          <?php foreach ($filasTarjetas as $fila){
-              echo "<table style='width:250px' border='4px solid' bgcolor='#ADD8E6'>";
+          <table>
+            <tr>
+          <?php
+          $contador=1;
+          foreach ($filasTarjetas as $fila){
+              echo "<td>";
+              echo "<table style='width:300px height:300px' border='4px solid' bgcolor='#ADD8E6'>";
               echo "<tr>";
               echo "<td>";
               echo "Salida: ".$fila['salida'];
@@ -114,12 +121,18 @@
               echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
               echo "<button class='btn' type='button' name='button id='button'>";
               echo "Ver más";
-              echo "<span class='arrow'>  ❯  </span>";
               echo "</button>";
               echo "</a>";
+              echo "</td>";
+              if ($contador%2==0) {
+                echo "</tr>";
+                echo "<tr>";
+              }
+              $contador++;
             }
                 ?>
-
+              </tr>
+          </table>
     </main>
 
 
