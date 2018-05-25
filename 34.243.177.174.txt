@@ -2,3 +2,5 @@ Ip de la maquina del proyecto
 34.243.177.174
 
 ssh -i "lolitos.pem" ubuntu@ec2-34-243-177-174.eu-west-1.compute.amazonaws.com
+
+mysql -u lolazos -h 34.243.177.174 -p
