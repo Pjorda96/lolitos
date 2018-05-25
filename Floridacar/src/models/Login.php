@@ -29,11 +29,17 @@ class Login extends Db
             $contrasenyaDb = $fila['contrasenya'];
         }
 
-        if ($pass === $contrasenyaDb) {
+        if ($pass == $contrasenyaDb) {
             $_SESSION['usuario'] = $usuario;
             //var_dump($_SESSION['usuario']);
             header('Location: index.php');
         }else {
+            header('Location: login.php');
+        }
+
+        if (isset($_SESSION['usuario'])) {
+            header('Location: index.php');
+        } else {
             header('Location: login.php');
         }
     }

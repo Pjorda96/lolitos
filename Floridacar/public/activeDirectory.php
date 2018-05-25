@@ -1,5 +1,4 @@
 <?php
-
 require_once  __DIR__.'/../vendor/autoload.php';
 
 use Car\models\Login;
@@ -24,6 +23,7 @@ if ($_SESSION['usuario'] !== 'admin'){
     ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
     ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);
     $bind = @ldap_bind($ldap, $ldaprdn, $password);
+    var_dump($bind);
     /*if ($bind) {
     	$msg = "Estás logueado como correctamente como $username";
     } else {
@@ -32,6 +32,12 @@ if ($_SESSION['usuario'] !== 'admin'){
     echo $msg;*/
     if ($bind) {
         $_SESSION['usuario'] = $_POST['username'];
+        header('Location: index.php');
+    } else {
+        header('Location: login.php');
+    }
+
+    if (isset($_SESSION['usuario'])) {
         header('Location: index.php');
     } else {
         header('Location: login.php');

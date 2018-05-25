@@ -1,5 +1,11 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 use Car\models\Tarjeta;
+use Car\models\Usuario;
+
 $apuntarse= new Tarjeta();
-$apuntartarjeta=$apuntarse->apuntarse(, $_GET['id_tarjeta'])
+$user=new Usuario();
+
+$user->leerDatos($_SESSION['usuario']);
+$dni=$user->getDni();
+$apuntartarjeta=$apuntarse->apuntarse($dni,$_GET['id_tarjeta']);

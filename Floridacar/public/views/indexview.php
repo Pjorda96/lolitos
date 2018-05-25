@@ -16,7 +16,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <title>FloridaCar</title>
     <style>
-
+      .contenedor{
+        width: auto;
+      }
       body { background-image: url("images/fondo.png") }
     </style>
 
@@ -85,9 +87,8 @@
 
 
       <div class="album py-5 bg-light">
-        <div class="container">
-          <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
-
+        <div class="contenedor">
+          <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
           <br>
           <br>
           <br>
@@ -113,12 +114,11 @@
               echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
               echo "<button class='btn' type='button' name='button id='button'>";
               echo "Ver más";
+              echo "<span class='arrow'>  ❯  </span>";
               echo "</button>";
               echo "</a>";
-              echo "  "."<br><br>";
             }
                 ?>
-
 
     </main>
 
