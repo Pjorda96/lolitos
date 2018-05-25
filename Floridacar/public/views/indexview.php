@@ -89,7 +89,7 @@
 
 
       <div class="album py-5 bg-light" style="text-align: center;">
-        <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
+        <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
         <div class="contenedor">
           <br>
           <br>
@@ -121,7 +121,6 @@
               echo "<a href='tarjeta.php?id_tarjeta=".$fila['id_tarjeta']."'>";
               echo "<button class='btn' type='button' name='button id='button'>";
               echo "Ver más";
-              echo "<span class='arrow'>  ❯  </span>";
               echo "</button>";
               echo "</a>";
               echo "</td>";
