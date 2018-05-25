@@ -88,7 +88,7 @@
     <main role="main">
 
 
-      <div class="album py-5 bg-light" style="text-align: center;">
+      
         <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
         <div class="contenedor">
           <br>
@@ -100,7 +100,7 @@
           $contador=1;
           foreach ($filasTarjetas as $fila){
               echo "<td>";
-              echo "<table style='width:300px height:300px' border='4px solid' bgcolor='#ADD8E6'>";
+              echo "<table style='width:300px height:300px' border='4px solid' background-image: url(../images/fondo.png) no-repeat'>";
               echo "<tr>";
               echo "<td>";
               echo "Salida: ".$fila['salida'];
