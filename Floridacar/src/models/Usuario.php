@@ -96,20 +96,6 @@ class Usuario extends Db
         $registro = parent::consultar($borrar);
     }
 
-    /*public function lista(){
-        $usuarios="select usuario from usuarios";
-        $resultado = parent::consultar($usuarios);
-        foreach ($resultado as $fila) {
-            echo "<option value='";
-            echo $fila['usuario'];
-            echo "'>";
-            echo $fila['usuario'];
-            echo "</option>";
-        }
-    }*/
-
-
-
     /**
      * Get the value of Usuario
      *

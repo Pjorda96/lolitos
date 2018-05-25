@@ -39,20 +39,36 @@ class Tarjeta extends Db
         parent::consultar($insertar);
         header('Location: index.php');
     }
-    /*public function traerDNI(){
-      $traerDNI=;
-    }*/
+
     public function apuntarse($dni, $id_tarjeta){
         $apuntar="INSERT into perxtar (dni, id_tarjeta) values ('$dni', $id_tarjeta)";
         parent::consultar($apuntar);
-        header("Location: tarjeta.php");
     }
-    public function restaApuntar($id_tarjeta)
+
+    public function restPlazas($plazas)
     {
-      $actualizar="UPDATE tarjetas set plazas=old.plazas-1
-      where usuario='".$_SESSION['usuario']."';";
-      var_dump($actualizar);
+      $actualizar="UPDATE tarjetas set plazas=$plazas
+      where id_tarjeta=".$_GET["id_tarjeta"];
       parent::consultar($actualizar);
-      header('Location: perfil.php');
+      //header('Location: perfil.php');
+    }
+
+    public function plazas()
+    {
+        $plazas="select plazas from tarjetas where id_tarjeta=".$_GET["id_tarjeta"];
+        $retPlazas=parent::consultar($plazas);
+        return $retPlazas;
+    }
+
+    /**
+     * Set the value of plazas
+     *
+     * @param mixed plazas
+     *
+     * @return self
+     */
+    public function setPlazas($plazas)
+    {
+        $this->plazas = $plazas;
     }
   }

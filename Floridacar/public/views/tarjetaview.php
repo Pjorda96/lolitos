@@ -104,7 +104,9 @@
                <td><strong>Vehiculo: </strong><?php foreach ($pantallaTarjeta as $fila) {echo $fila['vehiculo'];} ?></td>
              </tr>
            </table>
-           <button type="button" name="Apuntarse" id="apuntarse" class="btn" onclick="location.href='apuntarse.php/?id_tarjeta=<?php echo '$_GET["id_tarjeta"]'?>">Apuntarse</button>
+           <a href='apuntarse.php?id_tarjeta=<?php echo $id?>'>
+               <button type="button" name="Apuntarse" id="apuntarse" class="btn">Apuntarse</button>
+           </a>
            <button type="button" class="btn" onclick="location.href='index.php';"> Volver  </button>
 
      </main>
