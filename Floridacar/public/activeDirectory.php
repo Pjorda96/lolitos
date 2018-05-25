@@ -1,6 +1,5 @@
 <?php
 require_once  __DIR__.'/../vendor/autoload.php';
-
 use Car\models\Login;
 
 $login=new Login();

@@ -28,10 +28,10 @@
   </head>
 
   <body>
-    <form class="" action="perfil.php" method="post" onsubmit="">
+    <form class="" action="" method="post" onsubmit="">
 
 
-      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$perfil->getUsuario()?>"><br>
+      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$_SESSION['usuario']?>"><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
       <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$perfil->getTelefono()?>"><br>
@@ -40,7 +40,7 @@
 
 
 
-      <input type="submit" class="btn" name="Enviar" value="Enviar">
+      <input type="submit" class="btn" name="enviar" value="Enviar">
 <input type="button" name="Volver" value="Volver" class="btn" onclick="location.href='index.php';"> </input>
 
       <input type="hidden" name="id" value="">

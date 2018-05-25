@@ -42,12 +42,12 @@ class Usuario extends Db
         $registro = parent::consultar($insertar);
     }
 
-    public function actualizarUsuario($usuario,$nombre,$apellidos,$fechanac,$foto,$telefono,$direccion){
-        $actualizar="UPDATE persona set usuario='".$_POST['usuario']."',nombre='".$_POST['nombre']."',apellidos='".
-            $_POST['apellidos']."',fechanac='".$_POST['fechanac']."',foto='".$_POST['foto']."',telefono='".$_POST['telefono']."',direccion='".$_POST['direccion']."'
-        where usuario='".$_POST['usuario']."';";
-        $resActualizar = parent::consultar($actualizar);
-     return $resActualizar;
+    public function actualizarUsuario($nombre,$apellidos,$telefono,$ciudad){
+        $actualizar="UPDATE persona set nombre='$nombre',apellidos='$apellidos',telefono='$telefono',direccion='$ciudad'
+        where usuario='".$_SESSION['usuario']."';";
+        var_dump($actualizar);
+        parent::consultar($actualizar);
+        header('Location: perfil.php');
     }
 
     public function leerDatos($usuario){
