@@ -18,6 +18,8 @@
     <style>
       .contenedor{
         width: auto;
+        text-align: center;
+        padding-left: 375px;
       }
       body { background-image: url("images/fondo.png") }
     </style>
@@ -86,9 +88,9 @@
     <main role="main">
 
 
-      <div class="album py-5 bg-light">
+      <div class="album py-5 bg-light" style="text-align: center;">
+        <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
         <div class="contenedor">
-          <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta <span class="arrow">❯</span></button>
           <br>
           <br>
           <br>
