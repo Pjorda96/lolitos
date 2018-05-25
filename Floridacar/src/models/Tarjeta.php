@@ -37,9 +37,9 @@ class Tarjeta extends Db
     ('$destino','$fecha',$precio,'$salida','$vehiculo',$plazas,'$hora')";
         $registro = parent::consultar($insertar);
     }
-    public function traerDNI(){
-      $traerDNI=
-    }
+    /*public function traerDNI(){
+      $traerDNI=;
+    }*/
     public function apuntarse($dni, $id_tarjeta){
         $apuntar="INSERT into perxtar (dni, id_tarjeta) values ($dni, $id_tarjeta)";
         $registroapuntarse = parent::consultar($apuntar);
