@@ -112,7 +112,7 @@
       </div><br>
       <div style="text-align:left">
         <input  class="btn" type="submit" name="crear" value="Crear tarjeta">
-        <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
+        <button type="button" class="btn" onclick="location.href='index.php';"> Volver </button>
       </div>
     </form>
       </div>

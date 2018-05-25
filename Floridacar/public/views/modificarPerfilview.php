@@ -26,23 +26,27 @@
     <meta charset="utf-8">
     <title>FloridaCar</title>
   </head>
+
   <body>
     <form class="" action="perfil.php" method="post" onsubmit="">
-      <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
+
 
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$perfil->getUsuario()?>"><br>
       <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
       <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
       <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$perfil->getTelefono()?>"><br>
       <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$perfil->getLocalidad()?>"><br>
-      <select name="genero" id="genero">
-        <option>hombre</option>
-        <option>mujer</option>
-      </select>
 
-      <input type="submit" class="btn" name="Enviar" value="Enviar">  <br>
+
+
+
+      <input type="submit" class="btn" name="Enviar" value="Enviar">
+<input type="button" name="Volver" value="Volver" class="btn" onclick="location.href='index.php';"> </input>
 
       <input type="hidden" name="id" value="">
+
     </form>
+
   </body>
+
 </html>

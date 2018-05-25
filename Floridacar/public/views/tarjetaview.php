@@ -107,7 +107,7 @@
              </tr>
            </table>
            <input type="submit" name="Apuntarse" value="Apuntarse" id="apuntarse" class="btn">
-           <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span> </button>
+           <button type="button" class="btn" onclick="location.href='index.php';"> Volver  </button>
 
      </main>
 

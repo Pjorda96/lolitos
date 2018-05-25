@@ -116,7 +116,7 @@
             <input type="text" placeholder="genero" id="genero" name="genero" value="<?=$baseDatos->getGenero()?>" readonly>
         </div><br>
         <input class="btn" type="button" onclick="location.href='modificarPerfil.php';" value="Actualizar" />
-    <button type="button" class="btn" onclick="location.href='index.php';"> Volver <span class="arrow">❯</span></button>
+    <button type="button" class="btn" onclick="location.href='index.php';"> Volver </button>
 
   </div>
 
