@@ -86,12 +86,8 @@
     </header>
 
     <main role="main">
-
-
-      
-        <button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button>
+        <p style="text-align:center; padding-top:50px"><button type="button" class="btn" onclick="location.href='crearTarjeta.php';"> Nueva Tarjeta </button></p>
         <div class="contenedor">
-          <br>
           <br>
           <br>
           <table>
