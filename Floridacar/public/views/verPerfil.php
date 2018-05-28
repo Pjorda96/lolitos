@@ -78,9 +78,9 @@
       <img src="
       <?php
       if ($baseDatos->getGenero() == "Hombre"){
-          echo "http://34.243.177.174/Floridacar/public/images/hombre_generico.jpg";
+          echo "http://34.243.177.174/public/images/hombre_generico.jpg";
       } else {
-          echo "http://34.243.177.174/Floridacar/public/images/mujer_generico.jpg";
+          echo "http://34.243.177.174/public/images/mujer_generico.jpg";
       }
       ?>" alt="Hombre" height="200" width="200">
       <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$baseDatos->getUsuario()?>" readonly><br>
