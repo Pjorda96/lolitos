@@ -84,31 +84,31 @@
      <form action="crearTarjeta.php" onsubmit="validarTarjeta()" method="post">
       <div style="text-align:left">
         <label for="destino">Destino:</label><br>
-        <input type="text" name="destino" placeholder="destino" id="destino" />
+        <input type="text" name="destino" placeholder="Destino" id="destino" />
       </div><br>
       <div style="text-align:left">
         <label for="salida">Salida:</label><br>
-        <input type="text" name="salida" placeholder="salida" id="salida" />
+        <input type="text" name="salida" placeholder="Salida" id="salida" />
     </div><br>
       <div style="text-align:left">
         <label for="fecha">Fecha:</label><br>
-        <input type="date" name="fecha" placeholder="fecha" id="fecha" />
+        <input type="date" name="fecha" placeholder="Fecha" id="fecha" />
       </div><br>
       <div style="text-align:left">
         <label for="precio">Precio:</label><br>
-        <input type="text" name="precio" placeholder="precio" id="precio" />
+        <input type="text" name="precio" placeholder="Precio" id="precio" />
       </div><br>
       <div style="text-align:left">
         <label for="vehiculo">Vehiculo:</label><br>
-        <input type="text" name="vehiculo" placeholder="vehiculo" id="vehiculo" />
+        <input type="text" name="vehiculo" placeholder="Vehiculo" id="vehiculo" />
       </div><br>
       <div style="text-align:left">
         <label for="plazas">Plazas:</label><br>
-        <input type="text" name="plazas" id="plazas" />
+        <input type="text" name="plazas" placeholder="Plazas" id="plazas" />
       </div><br>
       <div style="text-align:left">
           <label for="hora">Hora:</label><br>
-          <input type="time" name="hora" placeholder="hora" id="hora" />
+          <input type="time" name="hora" id="hora" />
       </div><br>
       <div style="text-align:left">
         <input  class="btn" type="submit" name="crear" value="Crear tarjeta">

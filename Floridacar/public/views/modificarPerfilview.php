@@ -31,11 +31,11 @@
     <form class="" action="" method="post" onsubmit="">
 
 
-      <input type="hidden" placeholder="user" id="usuario" name="usuario" value="<?=$_SESSION['usuario']?>"><br>
-      <input type="text" placeholder="nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
-      <input type="text" placeholder="apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
-      <input type="tel" placeholder="telefono" id="telefono" name="telefono" value="<?=$perfil->getTelefono()?>"><br>
-      <input type="text" placeholder="direccion" id="direccion" name="direccion" value="<?=$perfil->getLocalidad()?>"><br>
+      <input type="hidden" placeholder="User" id="usuario" name="usuario" value="<?=$_SESSION['usuario']?>"><br>
+      <input type="text" placeholder="Nombre" id="nombre" name="nombre" value="<?=$perfil->getNombre()?>"><br>
+      <input type="text" placeholder="Apellidos" id="apellidos" name="apellidos" value="<?=$perfil->getApellidos()?>"><br>
+      <input type="tel" placeholder="Telefono" id="telefono" name="telefono" value="<?=$perfil->getTelefono()?>"><br>
+      <input type="text" placeholder="Direccion" id="direccion" name="direccion" value="<?=$perfil->getLocalidad()?>"><br>
 
 
 

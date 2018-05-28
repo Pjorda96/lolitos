@@ -4,7 +4,7 @@ use Car\models\Tarjeta;
 
 session_start();
 if (!isset($_SESSION['usuario'])){
-    header('Location: index.php');
+    header('Location: login.php');
 }
 
 $tarjetanew= new Tarjeta();

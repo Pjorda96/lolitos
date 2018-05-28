@@ -71,15 +71,15 @@
      <form class="" action="" onsubmit="validarInsertar()" method="post">
       <div style="text-align:left">
         <label for="nombre">Nombre:</label><br>
-        <input type="text" name="nombre" placeholder="nombre" id="nombre" />
+        <input type="text" name="nombre" placeholder="Nombre" id="nombre" />
       </div><br>
       <div style="text-align:left">
         <label for="apellidos">Apellidos:</label><br>
-        <input type="text" name="apellidos" placeholder="apellidos" id="apellidos" />
+        <input type="text" name="apellidos" placeholder="Apellidos" id="apellidos" />
     </div><br>
       <div style="text-align:left">
         <label for="telefono">Teléfono:</label><br>
-        <input type="tel" name="telefono" placeholder="telefono" id="telefono" />
+        <input type="tel" name="telefono" placeholder="Telefono" id="telefono" />
       </div><br>
       <div style="text-align:left">
         <label for="ciudad">Ciudad:</label><br>
@@ -87,7 +87,7 @@
       </div><br>
       <div style="text-align:left">
         <label for="correoflorida">Correo Florida:</label><br>
-        <input type="text" name="correoflorida" placeholder="correo florida" id="correoflorida" /><label for="correoflorida">@floridauniversitaria.es</label>
+        <input type="text" name="correoflorida" placeholder="Correo florida" id="correoflorida" /><label for="correoflorida">@floridauniversitaria.es</label>
       </div><br>
       <div style="text-align:left">
         <label for="genero">Género:</label><br>
@@ -99,11 +99,11 @@
       </div><br>
       <div style="text-align:left">
         <label for="dni">DNI:</label><br>
-        <input type="text" name="dni" id="dni" />
+        <input type="text" name="dni" placeholder="DNI" id="dni" />
       </div><br>
       <div style="text-align:left">
           <label for="password">Contraseña:</label><br>
-          <input type="password" name="password" placeholder="password" id="password" />
+          <input type="password" name="password" placeholder="Password" id="password" />
       </div><br>
       <div style="text-align:left">
         <input type="submit" class="btn" name="crear" value="Crear cuenta">
